@@ -1,0 +1,501 @@
+Age,Gender,BMI,Geographic_Region,Pregnancy_Status,Diet_Type,Smoking_Status,Alcohol_Consumption,Sun_Exposure,Physical_Activity_Level,Stress_Level,Chronic_Condition,Medication_Use,Recent_Blood_Loss,Family_History_of_Deficiency,Digestive_Issues,Fatigue,Pallor,Shortness_of_Breath,Cold_Intolerance,Bone_Pain,Muscle_Weakness,Frequent_Illness,Hair_Loss,Tingling_Numbness,Memory_Cognitive_Issues,Balance_Problems,Mood_Swings,Muscle_Cramps,Dental_Issues,Brittle_Nails,Anxiety_and_Poor_Sleep,Frequent_Headaches,Loss_of_Appetite,Slow_Wound_Healing,Loss_of_Taste_Smell,Mouth_Sores,Tongue_Swelling,Restless_Legs,Night_Sweats,Energy_Level,Sleep_Quality,Deficiency
+56,Female,28.8,Polar/Cold,,Omnivore,Former,,Moderate,Active,Moderate,,,No,Yes,,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,Yes,No,No,No,Yes,Yes,High,Poor,Calcium
+69,Male,24.2,Tropical,,Vegetarian,Current,Moderate,Moderate,Moderate,Moderate,,,No,No,,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Low,Good,Iron
+46,Male,27.9,Temperate,,Vegetarian,Never,,Moderate,Moderate,Low,,,No,No,Occasional,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Medium,Good,Vitamin D
+32,Female,28.8,Temperate,No,Pescatarian,Former,,Moderate,Sedentary,Low,CKD,Antacids/PPIs,No,Yes,Occasional,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Low,Average,Vitamin D
+60,Male,19.7,Subtropical,,Omnivore,Former,,Low,Sedentary,High,Diabetes,Steroids,No,Yes,,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,High,Average,Magnesium
+25,Female,30.2,Tropical,No,Omnivore,Never,Heavy,Moderate,Moderate,Moderate,,Steroids,No,No,,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Poor,Magnesium
+78,Male,28.1,Tropical,,Omnivore,Never,Heavy,Moderate,Light,High,Diabetes,Diuretics,Yes,No,,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,High,Average,Folate
+38,Male,21.3,Temperate,,Omnivore,Former,Heavy,Moderate,Light,High,Hypothyroid,Metformin,No,No,Occasional,Yes,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Yes,No,High,Good,Iron
+56,Male,25.4,Tropical,,Vegan,Never,Occasional,High,Active,Low,Diabetes,Antacids/PPIs,No,No,Frequent,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Vitamin B12
+75,Male,25.2,Temperate,,Vegetarian,Never,Occasional,Low,Sedentary,Moderate,,,No,Yes,,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Poor,Iron
+36,Male,24.1,Temperate,,Vegetarian,Never,Occasional,Moderate,Sedentary,Moderate,Diabetes,,No,Yes,Occasional,No,No,No,No,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Medium,Good,Vitamin D
+40,Male,27.9,Tropical,,Vegetarian,Former,Heavy,Low,Light,Moderate,,Antacids/PPIs,No,No,,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Medium,Good,Vitamin B12
+28,Female,30.5,Subtropical,Yes,Vegetarian,Former,Heavy,High,Moderate,High,Diabetes,,Yes,No,,Yes,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Average,Iron
+28,Male,24.0,Tropical,,Omnivore,Current,Moderate,Low,Light,Low,IBD,Steroids,No,Yes,Occasional,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Low,Poor,Iron
+41,Female,30.0,Temperate,No,Vegan,Never,Moderate,High,Active,Moderate,,Diuretics,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,Medium,Good,Calcium
+70,Female,28.4,Subtropical,,Omnivore,Former,,Low,Sedentary,Moderate,Diabetes,,No,No,,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,Yes,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Average,Vitamin B12
+53,Male,25.0,Polar/Cold,,Omnivore,Never,Occasional,Low,Moderate,Moderate,Hypertension,Antacids/PPIs,No,No,,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Medium,Good,Vitamin D
+57,Male,24.8,Polar/Cold,,Vegetarian,Never,,Moderate,Moderate,High,,Diuretics,Yes,No,,Yes,No,No,Yes,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Calcium
+41,Male,18.8,Polar/Cold,,Omnivore,Never,Occasional,Moderate,Light,Low,,Diuretics,No,No,Occasional,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,High,Average,Zinc
+20,Female,17.2,Tropical,No,Vegan,Former,Moderate,Moderate,Sedentary,Low,CKD,Metformin,No,No,,Yes,No,Yes,No,Yes,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,Low,Good,Iron
+39,Other,24.7,Subtropical,,Omnivore,Never,Occasional,Moderate,Active,Moderate,CKD,,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,High,Average,Zinc
+70,Male,20.1,Polar/Cold,,Omnivore,Never,Moderate,Moderate,Sedentary,High,,,No,Yes,Occasional,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Medium,Good,Magnesium
+19,Female,23.8,Temperate,No,Pescatarian,Former,,Low,Active,Moderate,Hypertension,,No,Yes,,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+41,Female,21.6,Subtropical,No,Omnivore,Never,Moderate,Low,Sedentary,Moderate,,,Yes,No,Frequent,Yes,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Average,Iron
+61,Female,16.0,Temperate,,Omnivore,Never,Moderate,Moderate,Sedentary,Moderate,IBD,Steroids,No,No,,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Poor,
+47,Female,25.6,Temperate,,Pescatarian,Never,Heavy,Low,Sedentary,High,,,Yes,Yes,,No,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+55,Female,22.1,Polar/Cold,,Omnivore,Never,Occasional,Moderate,Sedentary,Low,,Steroids,No,No,Frequent,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,Medium,Good,Iron
+19,Male,24.4,Temperate,,Pescatarian,Never,Heavy,Low,Moderate,Low,,,No,No,,Yes,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Iron
+77,Male,20.0,Tropical,,Omnivore,Never,Occasional,Low,Moderate,Moderate,,,No,Yes,Frequent,Yes,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,Yes,Yes,No,Yes,No,No,No,Low,Poor,Zinc
+38,Male,22.5,Tropical,,Omnivore,Current,,High,Moderate,High,Diabetes,Metformin,No,No,,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Medium,Average,Calcium
+50,Male,31.0,Polar/Cold,,Omnivore,Never,,Low,Light,High,Hypertension,Diuretics,No,No,Occasional,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,Yes,No,No,No,Yes,Low,Good,Zinc
+29,Female,24.6,Temperate,No,Omnivore,Current,,Moderate,Light,Moderate,CKD,Antacids/PPIs,No,No,,No,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,Low,Good,Magnesium
+75,Female,26.5,Subtropical,,Vegetarian,Never,Occasional,Moderate,Sedentary,Moderate,Diabetes,,Yes,Yes,,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,Medium,Poor,Vitamin B12
+39,Male,18.3,Temperate,,Omnivore,Never,Heavy,Moderate,Sedentary,Moderate,IBD,,Yes,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Low,Poor,
+78,Female,34.8,Subtropical,,Omnivore,Current,Moderate,Low,Moderate,High,IBD,Metformin,No,No,Frequent,Yes,No,No,No,Yes,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+61,Female,32.3,Subtropical,,Vegan,Never,,Moderate,Moderate,Low,,Metformin,No,No,Occasional,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,Low,Average,Calcium
+42,Male,30.1,Tropical,,Omnivore,Current,Moderate,Low,Sedentary,Low,Celiac,,No,No,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,No,Low,Poor,Zinc
+66,Female,27.7,Polar/Cold,,Omnivore,Never,,Low,Light,Low,,,No,No,Occasional,Yes,No,No,No,Yes,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,High,Good,Calcium
+44,Female,24.1,Temperate,No,Omnivore,Never,,Moderate,Light,Low,,,No,No,,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Medium,Poor,Folate
+76,Male,26.0,Tropical,,Omnivore,Former,Moderate,Moderate,Light,Low,Hypothyroid,Metformin,No,No,,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Poor,Calcium
+59,Female,28.7,Polar/Cold,,Vegan,Current,Occasional,Low,Moderate,Moderate,,,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Medium,Average,Magnesium
+45,Female,21.2,Temperate,No,Vegetarian,Never,Heavy,High,Moderate,High,,Steroids,No,Yes,,Yes,Yes,Yes,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,High,Good,Iron
+77,Male,22.0,Temperate,,Vegan,Never,,Moderate,Sedentary,Low,Hypertension,,No,No,Occasional,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,High,Poor,Vitamin D
+33,Male,16.5,Tropical,,Vegetarian,Never,Moderate,Low,Sedentary,Moderate,IBD,,No,No,,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Low,Good,Vitamin D
+32,Male,20.5,Temperate,,Vegan,Never,Moderate,High,Sedentary,High,,,Yes,No,Frequent,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,High,Good,Iron
+79,Female,31.5,Tropical,,Vegetarian,Current,Occasional,Low,Light,Moderate,,Metformin,No,Yes,Occasional,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Medium,Poor,Vitamin D
+79,Female,22.5,Temperate,,Omnivore,Current,Occasional,Moderate,Sedentary,High,,Diuretics,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,Iron
+64,Male,22.6,Tropical,,Vegetarian,Former,Heavy,Low,Moderate,High,IBD,,Yes,No,,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+79,Female,25.4,Tropical,,Pescatarian,Current,,Moderate,Light,Low,IBD,Diuretics,No,No,,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Low,Good,Calcium
+68,Male,16.7,Polar/Cold,,Omnivore,Former,Heavy,Low,Light,High,,,No,Yes,,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+61,Female,28.3,Temperate,,Vegan,Former,,High,Light,High,CKD,,No,No,,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+72,Female,29.7,Temperate,,Pescatarian,Never,Heavy,Low,Moderate,Low,,Antacids/PPIs,No,No,Frequent,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+69,Male,25.7,Temperate,,Vegetarian,Never,Heavy,Moderate,Sedentary,High,,,No,Yes,,No,No,No,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,High,Average,Vitamin D
+74,Female,31.4,Temperate,,Vegetarian,Never,,Low,Light,High,,,No,No,Occasional,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Medium,Poor,
+20,Female,18.0,Tropical,No,Pescatarian,Never,Heavy,Low,Sedentary,Moderate,Diabetes,,No,No,,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,Medium,Good,Calcium
+54,Female,32.3,Tropical,,Omnivore,Former,Occasional,High,Active,Moderate,Celiac,Metformin,No,No,,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,Yes,Yes,No,No,No,Yes,High,Poor,Calcium
+68,Male,20.7,Temperate,,Vegetarian,Never,,Low,Light,High,IBD,Diuretics,No,No,Occasional,No,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,Yes,Medium,Average,Iron
+24,Other,18.2,Tropical,,Omnivore,Never,Occasional,Low,Light,High,,Steroids,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,High,Poor,Magnesium
+38,Female,22.9,Tropical,No,Vegetarian,Never,,Low,Light,Moderate,Diabetes,Metformin,No,No,,Yes,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Medium,Poor,Iron
+26,Male,32.4,Temperate,,Vegetarian,Current,Heavy,Moderate,Light,Moderate,,Diuretics,No,No,,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Average,Vitamin D
+56,Male,23.9,Tropical,,Pescatarian,Never,Occasional,Low,Sedentary,Moderate,Hypothyroid,,No,No,,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Medium,Poor,
+35,Male,19.8,Temperate,,Omnivore,Former,Moderate,Moderate,Light,Moderate,Hypertension,Metformin,Yes,No,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Calcium
+21,Female,18.2,Tropical,No,Omnivore,Never,Occasional,Moderate,Sedentary,Low,Celiac,,No,No,,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Low,Poor,Calcium
+42,Male,23.5,Temperate,,Vegetarian,Never,Occasional,Low,Moderate,Moderate,Diabetes,,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Medium,Poor,Magnesium
+77,Female,15.0,Polar/Cold,,Omnivore,Current,Occasional,Moderate,Moderate,Moderate,IBD,,Yes,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,High,Good,Zinc
+31,Female,18.1,Tropical,No,Omnivore,Former,,Low,Sedentary,High,,,No,No,,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,Medium,Poor,Zinc
+67,Male,30.9,Tropical,,Vegetarian,Never,Occasional,Low,Light,High,,Antacids/PPIs,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Low,Average,Vitamin D
+75,Female,30.0,Temperate,,Vegetarian,Former,Occasional,Moderate,Light,Low,Diabetes,Metformin,No,No,Occasional,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,Yes,No,High,Average,Iron
+26,Female,23.4,Temperate,No,Omnivore,Current,,Low,Active,Low,Hypertension,Metformin,No,Yes,,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+43,Female,21.9,Polar/Cold,No,Pescatarian,Never,Heavy,Moderate,Moderate,Low,,,Yes,No,,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Low,Average,Vitamin D
+70,Female,24.3,Tropical,,Vegetarian,Current,Occasional,High,Moderate,High,,OCP,Yes,Yes,Occasional,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Poor,Vitamin D
+19,Male,34.6,Temperate,,Vegetarian,Former,Moderate,High,Moderate,High,Hypothyroid,,No,No,,No,Yes,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Medium,Good,
+37,Female,25.8,Polar/Cold,No,Vegetarian,Never,Heavy,Moderate,Moderate,High,Diabetes,,No,No,,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,Low,Average,Folate
+45,Female,28.1,Tropical,No,Omnivore,Former,Occasional,Low,Light,Low,Hypertension,,No,No,,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Low,Poor,Vitamin D
+64,Male,23.1,Tropical,,Vegan,Never,Occasional,Low,Light,Moderate,,OCP,No,No,Occasional,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Medium,Good,Calcium
+77,Female,24.3,Polar/Cold,,Pescatarian,Current,Occasional,Low,Active,Low,,,No,No,Frequent,No,Yes,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Poor,Vitamin B12
+24,Female,26.9,Temperate,No,Vegetarian,Former,,Moderate,Light,Low,Hypertension,,No,No,,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,Low,Poor,Folate
+61,Female,24.6,Subtropical,,Vegan,Former,,Low,Active,High,Celiac,,No,Yes,Occasional,Yes,No,No,No,No,Yes,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+78,Male,15.5,Tropical,,Vegan,Never,,Low,Light,Low,,,No,No,,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+25,Female,29.8,Polar/Cold,No,Omnivore,Current,Heavy,High,Sedentary,Low,,,No,Yes,,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,Vitamin D
+64,Male,21.2,Temperate,,Vegetarian,Never,Occasional,Low,Active,Low,CKD,,No,Yes,Occasional,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,Low,Average,Calcium
+52,Female,33.5,Temperate,,Omnivore,Current,Occasional,Moderate,Moderate,Moderate,,OCP,No,No,Frequent,Yes,No,No,No,Yes,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+31,Female,27.1,Temperate,Yes,Omnivore,Never,,Moderate,Light,Moderate,Hypertension,Antacids/PPIs,Yes,No,,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,High,Good,Calcium
+34,Male,24.3,Temperate,,Vegetarian,Never,,Low,Active,Low,,Antacids/PPIs,No,No,Occasional,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,Yes,No,No,Medium,Poor,Folate
+53,Female,26.0,Tropical,,Omnivore,Never,Occasional,High,Moderate,High,,Metformin,Yes,No,,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Medium,Average,Vitamin B12
+67,Male,23.5,Temperate,,Omnivore,Never,Moderate,Low,Moderate,Moderate,,Antacids/PPIs,No,No,Occasional,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+57,Male,21.8,Subtropical,,Omnivore,Never,Occasional,Moderate,Moderate,High,Celiac,OCP,No,No,Frequent,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Good,
+21,Female,24.9,Temperate,No,Vegetarian,Former,Moderate,Low,Sedentary,High,,Steroids,No,No,Frequent,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Average,Vitamin B12
+19,Male,28.0,Subtropical,,Omnivore,Never,Moderate,Moderate,Moderate,High,,Metformin,No,No,,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Good,Iron
+79,Male,21.9,Temperate,,Omnivore,Current,,Moderate,Sedentary,Low,,,No,Yes,Occasional,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Iron
+23,Female,21.2,Tropical,No,Pescatarian,Current,Moderate,Moderate,Active,Moderate,Diabetes,,No,No,,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Medium,Poor,Iron
+71,Male,22.4,Tropical,,Omnivore,Current,Heavy,Moderate,Active,Low,,Metformin,No,No,Frequent,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Calcium
+59,Male,28.3,Subtropical,,Vegan,Never,Occasional,Low,Moderate,High,Diabetes,Steroids,No,No,Occasional,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,High,Average,Zinc
+21,Female,30.5,Tropical,No,Omnivore,Former,Occasional,Moderate,Sedentary,Low,IBD,,No,No,Occasional,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,Vitamin B12
+71,Male,25.6,Temperate,,Omnivore,Never,,Moderate,Light,Moderate,Celiac,,No,No,,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,High,Good,Iron
+46,Female,26.6,Polar/Cold,,Vegan,Never,Moderate,High,Active,High,,Antacids/PPIs,No,No,,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,High,Average,Vitamin B12
+35,Female,21.2,Subtropical,No,Vegan,Never,,Low,Light,Low,IBD,Antacids/PPIs,No,No,Occasional,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Low,Good,
+43,Male,27.9,Tropical,,Vegetarian,Never,Moderate,Low,Active,Moderate,,,No,No,,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+61,Male,26.5,Tropical,,Vegetarian,Never,Occasional,Moderate,Moderate,Moderate,IBD,,No,No,,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,High,Average,
+51,Female,20.8,Subtropical,,Vegetarian,Never,Heavy,Moderate,Moderate,Moderate,,,No,No,,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,Folate
+27,Male,16.0,Subtropical,,Omnivore,Current,Occasional,Low,Light,Moderate,CKD,,Yes,Yes,,Yes,Yes,Yes,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Low,Poor,Iron
+79,Female,18.5,Subtropical,,Omnivore,Never,Occasional,High,Active,Moderate,,,No,Yes,,Yes,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Medium,Poor,Magnesium
+53,Female,21.0,Subtropical,,Omnivore,Former,,Low,Active,Low,CKD,,No,Yes,Occasional,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,High,Good,Magnesium
+31,Female,29.2,Tropical,No,Vegetarian,Former,,Low,Sedentary,Low,,OCP,No,No,Occasional,Yes,No,Yes,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Poor,Vitamin B12
+48,Female,31.0,Polar/Cold,,Vegan,Former,Moderate,Low,Light,Low,,Diuretics,No,No,,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+65,Female,22.0,Tropical,,Pescatarian,Current,Heavy,Low,Light,High,IBD,,No,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,Yes,No,Yes,No,No,No,No,Yes,Low,Average,Calcium
+32,Female,22.2,Temperate,No,Vegan,Never,Moderate,Moderate,Light,Moderate,,,Yes,No,,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Medium,Good,Iron
+25,Female,25.2,Tropical,No,Pescatarian,Current,Moderate,Moderate,Light,Moderate,IBD,Antacids/PPIs,No,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+31,Male,24.1,Tropical,,Vegetarian,Never,Occasional,Moderate,Light,Moderate,,Antacids/PPIs,No,No,,No,No,No,Yes,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Poor,Vitamin B12
+40,Male,28.2,Temperate,,Omnivore,Never,Moderate,Moderate,Active,Moderate,Hypertension,Diuretics,No,No,Occasional,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,
+77,Female,21.6,Tropical,,Vegetarian,Former,,Moderate,Moderate,Moderate,IBD,,No,Yes,,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,High,Good,Folate
+74,Male,28.3,Temperate,,Omnivore,Never,Moderate,High,Moderate,High,,,No,No,,Yes,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Low,Average,Vitamin D
+79,Female,22.9,Tropical,,Vegetarian,Former,,Moderate,Light,Low,,,No,No,Frequent,No,Yes,No,No,Yes,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+57,Male,27.8,Temperate,,Omnivore,Former,Occasional,Low,Light,Moderate,,Steroids,No,No,,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,High,Poor,Iron
+38,Female,22.8,Polar/Cold,No,Omnivore,Never,Occasional,Moderate,Light,Moderate,Diabetes,OCP,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,High,Average,Folate
+33,Male,21.2,Tropical,,Vegan,Former,Occasional,Moderate,Sedentary,Moderate,Hypertension,,No,No,,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Folate
+62,Female,32.6,Polar/Cold,,Omnivore,Never,Moderate,Moderate,Moderate,High,IBD,OCP,No,No,,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,High,Average,Vitamin D
+35,Male,28.8,Tropical,,Vegan,Former,Occasional,Low,Moderate,Moderate,Diabetes,,Yes,No,,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,Low,Poor,Calcium
+64,Female,15.9,Temperate,,Vegetarian,Never,Occasional,Low,Active,Moderate,Celiac,Antacids/PPIs,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,High,Good,Calcium
+70,Male,22.0,Polar/Cold,,Vegan,Current,Occasional,High,Active,Low,Hypothyroid,,No,No,Frequent,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,High,Average,Iron
+41,Male,29.4,Tropical,,Vegan,Never,,High,Moderate,High,,OCP,Yes,No,,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,Medium,Poor,Magnesium
+43,Male,18.6,Tropical,,Pescatarian,Current,Occasional,Moderate,Sedentary,Moderate,Hypothyroid,Antacids/PPIs,Yes,No,,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+42,Male,27.5,Tropical,,Vegan,Former,,Low,Light,Moderate,Hypothyroid,,No,Yes,,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,Medium,Average,Zinc
+77,Male,27.0,Polar/Cold,,Vegetarian,Never,Occasional,Moderate,Light,Low,Hypertension,,No,Yes,,No,No,No,No,Yes,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Medium,Good,Vitamin B12
+77,Female,20.9,Temperate,,Vegetarian,Never,,Moderate,Light,Low,,,No,No,,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,Yes,No,No,Yes,No,Low,Poor,Iron
+77,Female,24.0,Tropical,,Omnivore,Never,Heavy,Moderate,Light,High,,,Yes,Yes,,Yes,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,High,Good,Vitamin D
+62,Male,15.0,Polar/Cold,,Pescatarian,Never,,High,Light,Moderate,IBD,,No,No,Occasional,Yes,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,Yes,Medium,Poor,Iron
+58,Male,32.0,Tropical,,Vegan,Never,Moderate,High,Light,High,,OCP,No,No,Occasional,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,High,Average,Folate
+46,Female,22.6,Temperate,,Omnivore,Never,Moderate,High,Moderate,Low,Celiac,Steroids,No,Yes,,No,Yes,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,Yes,Yes,No,No,High,Good,Folate
+32,Female,27.6,Tropical,No,Omnivore,Former,Moderate,Low,Sedentary,Moderate,,OCP,No,No,,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,Yes,High,Good,Zinc
+62,Female,26.8,Subtropical,,Vegan,Never,Heavy,High,Light,Low,,Steroids,No,No,,No,No,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Medium,Average,Vitamin D
+18,Female,30.1,Polar/Cold,No,Omnivore,Former,,Moderate,Sedentary,Moderate,,Steroids,No,No,,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,High,Average,Iron
+42,Male,22.1,Subtropical,,Omnivore,Former,,Low,Moderate,High,Hypothyroid,Antacids/PPIs,No,No,Occasional,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,High,Good,Folate
+24,Male,24.9,Tropical,,Omnivore,Current,,Moderate,Moderate,Moderate,IBD,Metformin,No,No,Occasional,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,High,Average,
+26,Male,26.5,Subtropical,,Pescatarian,Current,,Moderate,Sedentary,Low,,OCP,Yes,No,,Yes,No,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Low,Good,Iron
+41,Male,27.9,Temperate,,Vegetarian,Never,Occasional,High,Active,High,Celiac,Antacids/PPIs,No,Yes,Occasional,No,No,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Good,Vitamin B12
+18,Male,29.2,Tropical,,Omnivore,Never,Moderate,Moderate,Light,Low,,Diuretics,Yes,No,,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,High,Good,Iron
+61,Male,21.9,Temperate,,Omnivore,Never,,Low,Sedentary,Moderate,Hypothyroid,Diuretics,No,No,,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Magnesium
+25,Female,21.0,Subtropical,No,Vegetarian,Never,Occasional,Low,Moderate,Moderate,,OCP,No,No,,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Good,Magnesium
+41,Male,30.1,Tropical,,Omnivore,Never,Occasional,Low,Active,High,,,No,No,Occasional,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,Medium,Good,Iron
+28,Female,15.0,Temperate,No,Vegan,Never,Occasional,Low,Active,Low,Celiac,,No,No,Occasional,No,No,No,No,Yes,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+68,Female,31.1,Subtropical,,Omnivore,Never,Occasional,Low,Sedentary,Low,,Antacids/PPIs,No,Yes,,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Average,Vitamin B12
+34,Female,22.6,Temperate,Yes,Omnivore,Never,Heavy,Moderate,Moderate,Low,Celiac,,No,Yes,,Yes,No,No,No,No,No,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,High,Good,Vitamin D
+25,Male,24.0,Tropical,,Omnivore,Never,,Moderate,Light,High,Hypertension,,No,No,Frequent,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,High,Poor,Folate
+52,Female,20.9,Temperate,,Omnivore,Never,Moderate,Moderate,Light,High,,,No,No,,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Medium,Good,Vitamin B12
+52,Female,23.8,Temperate,,Vegan,Former,Moderate,Moderate,Light,High,Celiac,Metformin,No,No,,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,High,Good,Vitamin D
+50,Female,29.7,Subtropical,,Vegan,Never,Moderate,Moderate,Moderate,Low,Hypothyroid,OCP,No,No,,Yes,No,No,No,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+76,Female,27.5,Tropical,,Vegetarian,Current,Heavy,Moderate,Sedentary,Low,,Metformin,No,No,,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,Yes,No,No,High,Average,Magnesium
+22,Male,26.2,Tropical,,Omnivore,Never,Moderate,Low,Active,Moderate,IBD,,No,Yes,,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+59,Male,24.4,Temperate,,Omnivore,Never,,Moderate,Sedentary,High,,,No,No,,Yes,No,No,Yes,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Low,Average,Vitamin D
+56,Male,17.5,Temperate,,Omnivore,Never,Occasional,Moderate,Active,High,,OCP,No,No,,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Medium,Poor,
+75,Male,20.2,Temperate,,Vegetarian,Never,Occasional,Low,Light,Moderate,,Antacids/PPIs,No,No,,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,High,Average,Calcium
+58,Female,22.5,Tropical,,Vegetarian,Former,,Low,Moderate,Moderate,,,No,No,Occasional,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,High,Average,Vitamin B12
+45,Male,26.1,Temperate,,Omnivore,Never,,Moderate,Light,Moderate,,Steroids,No,No,Occasional,No,No,No,No,No,No,Yes,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Average,Vitamin B12
+24,Female,24.3,Temperate,No,Vegetarian,Never,,Low,Light,High,Hypertension,,Yes,Yes,,No,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Medium,Average,Iron
+26,Male,28.4,Temperate,,Vegetarian,Never,Occasional,High,Moderate,Low,,,No,No,Occasional,Yes,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Low,Average,Vitamin D
+25,Male,26.1,Tropical,,Omnivore,Never,Occasional,Moderate,Sedentary,Moderate,,Metformin,No,No,Frequent,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,High,Average,Vitamin D
+29,Female,24.2,Subtropical,No,Omnivore,Never,Moderate,Low,Sedentary,High,CKD,Steroids,No,No,Frequent,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Low,Good,Calcium
+51,Male,34.2,Temperate,,Vegan,Current,Occasional,Moderate,Moderate,High,Celiac,,No,Yes,,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,Yes,Yes,No,Yes,No,High,Good,Vitamin D
+50,Male,25.8,Subtropical,,Omnivore,Never,Heavy,High,Moderate,Moderate,,OCP,Yes,No,,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,Low,Average,Vitamin D
+65,Female,22.1,Temperate,,Omnivore,Current,,Moderate,Moderate,High,Hypothyroid,,Yes,No,,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Average,Iron
+72,Male,32.4,Subtropical,,Omnivore,Never,Occasional,Low,Active,Low,,,No,Yes,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,Calcium
+40,Other,29.4,Subtropical,,Vegetarian,Never,,Moderate,Moderate,Moderate,IBD,Steroids,No,Yes,,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,High,Average,Vitamin D
+79,Male,32.2,Subtropical,,Vegetarian,Never,,Moderate,Light,Moderate,CKD,,No,Yes,Frequent,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,High,Poor,Folate
+41,Female,23.5,Tropical,Yes,Vegetarian,Never,Heavy,High,Sedentary,Low,Celiac,OCP,No,No,,Yes,Yes,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,Medium,Good,Folate
+54,Female,28.4,Temperate,,Omnivore,Current,Heavy,Low,Light,Moderate,Hypertension,Metformin,No,No,Occasional,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,High,Average,Iron
+52,Female,17.5,Tropical,,Omnivore,Former,Occasional,Low,Light,Moderate,CKD,OCP,No,No,,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,High,Poor,Vitamin D
+61,Male,27.5,Tropical,,Vegetarian,Never,,Moderate,Sedentary,Moderate,Celiac,,No,Yes,,No,No,No,No,Yes,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,High,Good,Calcium
+57,Female,23.3,Subtropical,,Omnivore,Never,,Moderate,Active,Low,,,Yes,No,,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+39,Male,17.9,Polar/Cold,,Omnivore,Current,Heavy,Moderate,Active,Low,,Diuretics,No,No,Occasional,No,Yes,Yes,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Low,Poor,Iron
+44,Male,28.6,Tropical,,Omnivore,Never,Heavy,Low,Sedentary,Low,,Steroids,No,No,,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,
+52,Female,15.9,Temperate,,Omnivore,Current,Occasional,Moderate,Sedentary,Moderate,IBD,,No,No,,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,Low,Average,Calcium
+18,Other,15.4,Subtropical,,Omnivore,Former,,Moderate,Moderate,High,,,No,Yes,,Yes,No,No,No,No,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,High,Average,Vitamin B12
+52,Male,25.6,Temperate,,Omnivore,Former,Heavy,Low,Moderate,Low,,,No,No,,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,Low,Average,Zinc
+54,Female,26.6,Temperate,,Omnivore,Never,,Moderate,Sedentary,Low,Hypertension,Antacids/PPIs,No,No,,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Medium,Average,Zinc
+64,Female,28.4,Tropical,,Vegan,Never,Heavy,Moderate,Light,Moderate,,,No,No,,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Medium,Poor,Iron
+31,Female,27.3,Tropical,No,Omnivore,Never,Occasional,Low,Active,High,Diabetes,,No,No,,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Iron
+20,Female,30.6,Tropical,No,Omnivore,Never,Moderate,High,Moderate,High,Hypertension,OCP,No,No,Occasional,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+18,Male,27.2,Subtropical,,Vegan,Never,Moderate,Moderate,Light,Low,,Metformin,No,No,Frequent,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Medium,Poor,Vitamin B12
+22,Male,23.4,Subtropical,,Vegetarian,Never,Occasional,Moderate,Moderate,High,Hypertension,Metformin,No,Yes,Occasional,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,High,Poor,Vitamin B12
+43,Female,23.7,Temperate,No,Vegan,Never,,Moderate,Light,Low,,Antacids/PPIs,No,Yes,,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,High,Poor,Magnesium
+72,Male,22.7,Temperate,,Vegan,Former,,Low,Moderate,High,,Diuretics,No,No,Occasional,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,High,Good,Magnesium
+31,Male,25.3,Tropical,,Omnivore,Never,,Low,Sedentary,Low,IBD,Antacids/PPIs,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Good,
+56,Male,19.1,Tropical,,Pescatarian,Current,Moderate,Moderate,Sedentary,High,,,No,No,,Yes,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,Yes,Medium,Good,Iron
+44,Male,25.5,Temperate,,Omnivore,Former,Occasional,Low,Light,High,,,No,Yes,Occasional,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Medium,Poor,Vitamin B12
+26,Male,23.6,Subtropical,,Omnivore,Never,Heavy,High,Moderate,Moderate,,Metformin,No,Yes,,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Low,Good,Vitamin D
+32,Female,25.2,Subtropical,No,Pescatarian,Current,,Moderate,Sedentary,Low,,,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Medium,Good,Folate
+32,Male,25.3,Temperate,,Pescatarian,Never,Moderate,Low,Active,Moderate,,OCP,Yes,Yes,,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+43,Male,15.0,Polar/Cold,,Vegetarian,Former,,High,Moderate,High,CKD,Steroids,No,No,,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Iron
+59,Female,19.9,Temperate,,Vegetarian,Never,Heavy,Low,Light,High,IBD,Steroids,No,Yes,Frequent,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+77,Female,23.5,Tropical,,Vegan,Current,Moderate,Low,Sedentary,Moderate,Diabetes,,No,No,,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+30,Male,23.8,Subtropical,,Omnivore,Former,Occasional,Moderate,Active,High,Hypertension,OCP,No,Yes,Occasional,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Low,Good,Vitamin D
+68,Female,25.2,Subtropical,,Omnivore,Never,Heavy,Moderate,Moderate,Moderate,,OCP,No,No,,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+49,Female,25.4,Tropical,,Omnivore,Never,,Low,Moderate,Moderate,Celiac,,No,Yes,,No,No,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Good,Folate
+56,Female,30.8,Subtropical,,Omnivore,Never,Occasional,Moderate,Light,High,,,No,No,,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Good,Vitamin B12
+66,Female,25.4,Subtropical,,Vegan,Never,Moderate,Low,Light,Low,,Antacids/PPIs,No,Yes,Occasional,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,High,Good,Folate
+69,Female,22.6,Temperate,,Vegetarian,Never,,Moderate,Sedentary,Low,,,No,No,Occasional,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Low,Poor,Calcium
+78,Female,16.8,Temperate,,Vegan,Never,Moderate,Moderate,Moderate,High,,Diuretics,No,No,,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Iron
+49,Male,17.8,Subtropical,,Pescatarian,Never,Heavy,Low,Active,Low,Hypertension,,No,No,,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Low,Average,
+21,Female,26.4,Tropical,Yes,Omnivore,Never,Occasional,Low,Active,Moderate,Diabetes,Antacids/PPIs,No,No,,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Yes,No,Low,Average,Zinc
+47,Female,28.8,Temperate,,Vegan,Former,Moderate,Low,Moderate,Moderate,Hypertension,Antacids/PPIs,No,No,,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Poor,
+54,Female,30.9,Subtropical,,Omnivore,Never,,Moderate,Moderate,Low,,,No,No,Occasional,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,High,Average,Folate
+40,Female,20.3,Polar/Cold,No,Vegetarian,Never,,Moderate,Light,Moderate,,Metformin,No,No,Occasional,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,Medium,Average,Zinc
+56,Male,22.6,Polar/Cold,,Vegetarian,Former,Heavy,Low,Light,Moderate,,,Yes,No,Frequent,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,High,Poor,Iron
+62,Male,25.1,Subtropical,,Omnivore,Never,Occasional,Moderate,Sedentary,Low,,OCP,No,No,Occasional,No,Yes,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,Medium,Average,Vitamin B12
+32,Male,33.2,Temperate,,Omnivore,Current,Occasional,Low,Moderate,High,,Metformin,No,No,,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+60,Female,24.5,Temperate,,Omnivore,Former,Heavy,High,Moderate,Low,,,Yes,No,Frequent,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,High,Good,Vitamin B12
+46,Female,31.0,Temperate,,Omnivore,Never,Occasional,Low,Sedentary,High,Celiac,Metformin,No,No,,No,No,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,Yes,No,High,Average,Iron
+53,Male,24.8,Subtropical,,Omnivore,Never,Moderate,Moderate,Active,Low,Hypertension,,No,Yes,Occasional,No,Yes,No,No,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Medium,Average,Vitamin D
+30,Male,29.2,Subtropical,,Vegetarian,Current,Moderate,Low,Moderate,High,,,No,No,Occasional,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,Medium,Average,
+49,Female,28.6,Subtropical,,Omnivore,Never,,Low,Moderate,High,Hypothyroid,Antacids/PPIs,No,No,Occasional,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,Medium,Good,Vitamin D
+24,Female,24.7,Tropical,No,Vegetarian,Former,Occasional,High,Sedentary,Moderate,,,No,Yes,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Medium,Poor,Zinc
+76,Female,19.4,Polar/Cold,,Pescatarian,Never,Moderate,High,Light,Moderate,,Antacids/PPIs,No,No,,No,No,No,No,Yes,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Medium,Average,Vitamin B12
+68,Female,22.8,Tropical,,Omnivore,Current,Moderate,Moderate,Moderate,Moderate,IBD,,Yes,Yes,,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Low,Average,Vitamin B12
+39,Female,30.7,Tropical,No,Vegan,Never,,High,Light,High,Diabetes,Antacids/PPIs,No,No,Occasional,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Average,
+45,Male,28.0,Polar/Cold,,Vegan,Former,,Moderate,Active,Moderate,,,No,Yes,,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Low,Average,
+19,Male,22.0,Temperate,,Vegan,Current,Moderate,Moderate,Moderate,High,CKD,,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Medium,Poor,Calcium
+59,Male,22.5,Tropical,,Omnivore,Never,Occasional,Low,Light,High,CKD,Antacids/PPIs,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,Low,Poor,Magnesium
+62,Male,16.2,Temperate,,Omnivore,Former,Moderate,Moderate,Light,Moderate,,,No,No,,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Low,Good,Iron
+79,Male,30.5,Tropical,,Omnivore,Former,,Moderate,Light,Low,IBD,,Yes,No,Frequent,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Medium,Poor,Vitamin D
+74,Male,28.0,Tropical,,Vegetarian,Former,,Low,Light,High,,,No,No,Occasional,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Average,
+70,Female,23.4,Polar/Cold,,Vegan,Never,,Low,Light,High,,Metformin,No,No,,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Low,Average,Calcium
+23,Female,24.9,Temperate,No,Vegetarian,Never,,Low,Moderate,High,,,Yes,Yes,Occasional,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+45,Female,15.0,Polar/Cold,No,Omnivore,Current,Occasional,Moderate,Moderate,Low,,Steroids,No,No,,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Good,Magnesium
+45,Female,21.8,Temperate,No,Vegan,Former,,High,Light,Moderate,Hypertension,,No,Yes,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Poor,Iron
+61,Other,30.0,Temperate,,Vegetarian,Former,,Low,Sedentary,Low,,,No,No,,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,Medium,Good,Calcium
+61,Female,28.4,Temperate,,Vegan,Never,,High,Light,Low,,,No,No,Frequent,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Medium,Average,Vitamin B12
+37,Male,25.5,Polar/Cold,,Vegan,Former,Occasional,High,Moderate,Low,Hypothyroid,Antacids/PPIs,No,No,,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,High,Average,Folate
+47,Male,23.9,Temperate,,Omnivore,Never,Occasional,High,Moderate,Moderate,,,No,No,,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Iron
+79,Female,27.6,Subtropical,,Pescatarian,Never,Occasional,Low,Light,High,Hypothyroid,,No,No,,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,High,Average,
+28,Male,22.7,Temperate,,Vegetarian,Former,,Moderate,Moderate,Moderate,Diabetes,,No,No,Frequent,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Good,Iron
+75,Female,16.5,Tropical,,Vegetarian,Former,Occasional,Low,Moderate,Low,,,No,Yes,Occasional,Yes,Yes,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Medium,Poor,Iron
+72,Female,24.0,Tropical,,Vegetarian,Current,,High,Light,Low,,,No,No,,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Calcium
+45,Male,25.8,Tropical,,Pescatarian,Never,Occasional,Low,Sedentary,Low,,,No,Yes,Occasional,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Low,Average,Magnesium
+42,Female,29.1,Polar/Cold,No,Vegetarian,Former,,Moderate,Sedentary,Moderate,Hypertension,,No,No,Frequent,No,No,No,No,Yes,Yes,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Average,Vitamin D
+56,Female,17.5,Tropical,,Omnivore,Never,Occasional,Low,Active,Low,,OCP,No,No,Occasional,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Medium,Poor,Iron
+79,Female,23.4,Tropical,,Omnivore,Current,,Low,Moderate,Low,,,No,No,Occasional,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,High,Average,Folate
+50,Male,23.7,Temperate,,Omnivore,Never,Occasional,Moderate,Active,Moderate,,Steroids,No,Yes,Occasional,Yes,Yes,No,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Good,Vitamin D
+18,Male,19.0,Polar/Cold,,Omnivore,Never,,Low,Light,Moderate,Hypertension,,No,No,,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,Medium,Average,Calcium
+74,Male,26.2,Subtropical,,Omnivore,Never,Heavy,Moderate,Moderate,High,,,No,No,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,High,Average,Calcium
+44,Female,27.4,Polar/Cold,No,Omnivore,Never,Heavy,Moderate,Active,Low,,OCP,No,No,Frequent,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Medium,Good,Vitamin B12
+79,Female,22.7,Tropical,,Vegetarian,Former,Heavy,Moderate,Light,High,IBD,Steroids,No,Yes,Occasional,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Medium,Poor,Calcium
+74,Male,33.2,Subtropical,,Omnivore,Never,Occasional,Moderate,Sedentary,High,Celiac,Antacids/PPIs,No,No,Frequent,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,Vitamin B12
+69,Female,22.6,Subtropical,,Vegetarian,Former,,Moderate,Moderate,High,,Diuretics,No,No,,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,Yes,Yes,No,Yes,High,Good,
+30,Male,22.0,Subtropical,,Omnivore,Current,Occasional,Low,Active,Moderate,Diabetes,Diuretics,No,No,Occasional,Yes,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,High,Poor,Vitamin D
+58,Female,21.9,Temperate,,Vegan,Current,,High,Moderate,High,,,No,No,,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,High,Average,Magnesium
+20,Female,20.3,Temperate,Yes,Omnivore,Former,,Moderate,Moderate,High,Hypertension,Antacids/PPIs,Yes,No,,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+56,Female,21.5,Temperate,,Pescatarian,Never,Occasional,Low,Moderate,Low,IBD,Antacids/PPIs,No,No,Frequent,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,High,Good,Vitamin B12
+23,Male,17.5,Tropical,,Pescatarian,Never,,Low,Moderate,High,,,Yes,No,Occasional,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,High,Average,Magnesium
+25,Male,23.1,Temperate,,Vegetarian,Never,Occasional,Moderate,Moderate,Moderate,Celiac,Metformin,No,No,Occasional,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+44,Male,24.3,Tropical,,Vegetarian,Never,Occasional,Low,Moderate,High,CKD,,No,No,,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+26,Female,15.0,Polar/Cold,Yes,Vegetarian,Former,Occasional,Low,Moderate,Moderate,,Steroids,No,No,,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,Medium,Average,Magnesium
+79,Male,23.5,Temperate,,Vegetarian,Never,,High,Active,Moderate,Celiac,,No,No,,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,High,Good,Iron
+54,Female,24.2,Temperate,,Vegan,Never,,High,Light,High,,Metformin,No,Yes,Occasional,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Low,Good,Vitamin B12
+50,Other,26.3,Temperate,,Pescatarian,Never,,High,Light,Low,Diabetes,,No,No,Occasional,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,
+68,Female,29.4,Polar/Cold,,Omnivore,Current,Occasional,Low,Light,Moderate,,,Yes,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,
+59,Female,27.8,Temperate,,Vegan,Never,Occasional,Moderate,Sedentary,Low,,,No,No,Frequent,Yes,Yes,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Medium,Average,Iron
+61,Male,21.2,Temperate,,Vegetarian,Never,,High,Moderate,Low,,Antacids/PPIs,No,No,Occasional,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,High,Poor,Vitamin D
+41,Male,20.7,Subtropical,,Omnivore,Former,,Moderate,Moderate,Moderate,Hypothyroid,OCP,No,No,Occasional,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,High,Average,Vitamin D
+32,Male,26.6,Polar/Cold,,Vegetarian,Former,,Low,Sedentary,Low,Hypertension,,No,No,Occasional,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,
+76,Female,21.5,Temperate,,Omnivore,Former,Heavy,Moderate,Moderate,Moderate,Hypertension,,No,No,,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,Low,Average,Folate
+71,Female,18.5,Temperate,,Omnivore,Former,,Low,Sedentary,Low,,,No,No,,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,No,No,No,Yes,No,No,Medium,Average,Folate
+49,Female,34.7,Subtropical,,Omnivore,Former,Occasional,Moderate,Light,High,,Steroids,No,No,Occasional,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Average,Vitamin D
+49,Male,22.6,Tropical,,Pescatarian,Never,Moderate,Low,Moderate,Moderate,,OCP,No,Yes,Frequent,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Medium,Poor,Iron
+41,Female,21.2,Subtropical,No,Omnivore,Never,,High,Active,Low,CKD,,Yes,No,,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Medium,Average,Zinc
+58,Female,15.0,Temperate,,Vegan,Never,,Moderate,Moderate,Moderate,Diabetes,Antacids/PPIs,No,Yes,,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Average,Magnesium
+69,Male,27.8,Temperate,,Vegetarian,Never,Moderate,Low,Light,Low,,Metformin,No,No,,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Low,Good,Calcium
+66,Female,19.6,Polar/Cold,,Omnivore,Current,Heavy,High,Moderate,Low,IBD,,No,No,,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,
+79,Male,24.1,Temperate,,Omnivore,Never,Heavy,High,Moderate,Low,Hypertension,Diuretics,No,No,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Low,Good,Calcium
+66,Female,28.4,Temperate,,Omnivore,Never,,Moderate,Active,High,CKD,,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Iron
+75,Female,19.6,Temperate,,Omnivore,Never,,Moderate,Sedentary,High,CKD,Metformin,No,No,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Zinc
+69,Male,24.4,Tropical,,Vegetarian,Former,Heavy,Low,Sedentary,Moderate,Celiac,,Yes,Yes,Frequent,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,High,Poor,Vitamin D
+29,Male,30.9,Tropical,,Omnivore,Never,,High,Sedentary,Low,Hypertension,Diuretics,No,No,Occasional,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,Medium,Good,Calcium
+79,Female,15.0,Temperate,,Omnivore,Never,,Low,Light,Moderate,IBD,Steroids,No,No,Occasional,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Low,Good,
+56,Female,20.4,Temperate,,Omnivore,Current,Heavy,Low,Moderate,High,,,Yes,No,Occasional,Yes,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,High,Good,Iron
+19,Male,19.9,Subtropical,,Omnivore,Former,Heavy,Low,Moderate,Low,,,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,Medium,Poor,Iron
+20,Other,23.2,Temperate,,Omnivore,Never,,High,Sedentary,Moderate,,Metformin,No,No,,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Medium,Average,Iron
+66,Female,23.8,Temperate,,Vegetarian,Never,Moderate,Low,Moderate,Moderate,Celiac,,Yes,Yes,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,High,Average,Calcium
+54,Male,19.2,Temperate,,Vegan,Former,Occasional,Moderate,Light,Low,,,No,No,,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+66,Male,21.1,Tropical,,Vegetarian,Never,Occasional,Moderate,Sedentary,Low,,Steroids,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Medium,Average,Calcium
+73,Female,20.5,Temperate,,Omnivore,Current,,High,Light,Moderate,Celiac,,No,Yes,,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,High,Poor,Magnesium
+34,Female,22.4,Tropical,No,Omnivore,Current,Occasional,Low,Moderate,Low,Diabetes,Metformin,Yes,No,,Yes,No,No,Yes,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,High,Good,Vitamin D
+76,Female,25.0,Subtropical,,Vegetarian,Current,Moderate,Low,Light,High,,Antacids/PPIs,No,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Low,Poor,Calcium
+66,Female,28.1,Temperate,,Omnivore,Current,Occasional,Low,Moderate,High,IBD,Steroids,No,Yes,Occasional,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+19,Male,28.7,Polar/Cold,,Vegan,Never,,High,Light,Moderate,Diabetes,,No,Yes,,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Low,Good,Vitamin B12
+19,Female,26.9,Tropical,No,Vegetarian,Never,Occasional,Moderate,Light,Low,Hypertension,,No,No,,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Low,Average,Folate
+45,Other,20.1,Polar/Cold,,Pescatarian,Former,Occasional,Moderate,Light,Moderate,,,Yes,No,Occasional,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,High,Good,Zinc
+71,Male,24.0,Subtropical,,Pescatarian,Never,Occasional,Low,Active,High,,,No,No,Occasional,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Iron
+40,Female,34.7,Polar/Cold,No,Omnivore,Never,Moderate,Low,Light,Low,Hypothyroid,,Yes,No,,No,No,No,No,Yes,Yes,No,No,Yes,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,High,Poor,Vitamin B12
+54,Male,28.6,Tropical,,Vegetarian,Never,Occasional,Low,Active,High,Hypertension,,Yes,No,,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Medium,Good,Vitamin D
+49,Female,22.0,Temperate,,Omnivore,Never,Heavy,Low,Moderate,High,,Metformin,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,High,Average,Iron
+50,Female,31.1,Temperate,,Omnivore,Never,Occasional,Moderate,Active,Low,,,No,No,Frequent,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,High,Poor,Zinc
+18,Female,22.3,Tropical,No,Pescatarian,Never,Moderate,Moderate,Sedentary,Moderate,IBD,,No,Yes,,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,High,Average,Calcium
+36,Female,21.0,Temperate,No,Vegetarian,Current,Occasional,Low,Active,Moderate,,Steroids,No,No,,No,Yes,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Average,Vitamin D
+79,Male,30.3,Polar/Cold,,Omnivore,Former,,Low,Light,Moderate,Hypothyroid,,No,Yes,,No,No,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,Low,Good,Magnesium
+19,Female,18.1,Tropical,No,Vegetarian,Never,Moderate,Moderate,Active,High,IBD,Antacids/PPIs,No,No,Frequent,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,High,Good,Calcium
+70,Male,15.4,Temperate,,Pescatarian,Former,Moderate,Moderate,Light,High,,OCP,No,No,Occasional,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,High,Good,Vitamin B12
+61,Female,28.2,Tropical,,Omnivore,Never,Moderate,Moderate,Light,High,,,No,Yes,Frequent,Yes,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Low,Average,Iron
+43,Female,24.1,Polar/Cold,No,Omnivore,Never,Occasional,High,Sedentary,High,Hypertension,,No,Yes,,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Low,Average,Iron
+49,Female,24.6,Subtropical,,Vegan,Former,Occasional,Low,Active,Low,Hypertension,,No,No,Occasional,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Medium,Average,Folate
+23,Male,22.4,Polar/Cold,,Vegan,Never,Occasional,Low,Sedentary,Moderate,,Diuretics,No,No,Occasional,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Medium,Poor,Folate
+49,Male,22.9,Polar/Cold,,Vegetarian,Former,,Low,Sedentary,High,,Metformin,No,Yes,Frequent,No,No,No,No,No,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+72,Female,21.9,Tropical,,Vegan,Never,Moderate,Low,Light,High,Hypertension,OCP,No,No,Occasional,No,No,No,No,No,Yes,No,Yes,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,No,Low,Poor,Zinc
+21,Other,21.2,Tropical,,Vegan,Never,Moderate,Low,Moderate,Moderate,Hypertension,Metformin,Yes,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Yes,Yes,No,No,Medium,Average,Calcium
+72,Female,22.3,Temperate,,Vegetarian,Former,Moderate,Moderate,Active,High,,,No,No,Occasional,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Iron
+28,Male,22.1,Temperate,,Vegetarian,Never,,High,Light,Moderate,,,No,No,Occasional,Yes,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Low,Average,Iron
+73,Female,20.3,Temperate,,Vegetarian,Former,Heavy,Moderate,Light,High,Celiac,,No,Yes,,Yes,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+76,Male,21.5,Temperate,,Omnivore,Never,Occasional,Low,Moderate,Low,,,No,Yes,Occasional,Yes,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Medium,Good,Folate
+34,Female,15.0,Polar/Cold,No,Omnivore,Never,Occasional,High,Moderate,High,,Steroids,No,Yes,,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,High,Good,Zinc
+55,Female,27.1,Temperate,,Omnivore,Current,Occasional,Low,Light,Moderate,Diabetes,Antacids/PPIs,No,No,,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,Medium,Good,Folate
+41,Male,25.8,Subtropical,,Omnivore,Never,Heavy,Low,Moderate,High,CKD,,No,Yes,Frequent,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Medium,Good,Folate
+22,Male,23.6,Temperate,,Omnivore,Current,Moderate,Low,Sedentary,Moderate,Hypertension,,No,No,Frequent,No,No,No,Yes,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+69,Male,25.1,Temperate,,Pescatarian,Current,Occasional,Low,Moderate,Moderate,,Diuretics,No,Yes,Occasional,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,Low,Average,Vitamin D
+51,Female,25.2,Polar/Cold,,Vegetarian,Never,Moderate,Moderate,Sedentary,High,,,No,No,,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,Iron
+23,Female,20.7,Subtropical,No,Omnivore,Never,Occasional,Moderate,Light,High,Hypothyroid,,No,No,Occasional,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,High,Poor,Zinc
+39,Male,21.6,Temperate,,Omnivore,Current,Heavy,Low,Moderate,High,,,No,No,,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,Folate
+28,Female,26.4,Polar/Cold,No,Omnivore,Never,Occasional,High,Sedentary,High,,Metformin,No,No,Occasional,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Low,Average,Vitamin B12
+65,Male,24.9,Tropical,,Vegan,Former,Occasional,Low,Moderate,High,Hypothyroid,Steroids,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,Medium,Good,Calcium
+33,Female,33.2,Subtropical,No,Omnivore,Current,,Moderate,Light,Low,,,No,No,,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Low,Good,Iron
+50,Female,31.3,Tropical,,Vegan,Never,Moderate,Moderate,Moderate,Moderate,,,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,Yes,No,No,Medium,Poor,Folate
+26,Female,28.2,Polar/Cold,No,Vegan,Never,Moderate,Moderate,Sedentary,Low,,,Yes,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,High,Average,Folate
+77,Male,20.6,Temperate,,Pescatarian,Never,Occasional,Low,Moderate,Moderate,,Metformin,No,Yes,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Medium,Good,
+76,Female,21.5,Temperate,,Omnivore,Former,Occasional,Moderate,Moderate,High,Diabetes,,No,No,Occasional,Yes,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Medium,Average,Zinc
+23,Female,19.5,Polar/Cold,No,Omnivore,Current,,High,Light,Low,Hypertension,Steroids,No,No,Occasional,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,Low,Poor,Folate
+33,Other,25.3,Temperate,,Vegan,Current,Heavy,Low,Active,High,,,No,Yes,Occasional,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Medium,Average,Iron
+46,Female,15.0,Temperate,,Omnivore,Never,Moderate,Low,Light,Low,,Metformin,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,Low,Average,Magnesium
+20,Male,21.9,Tropical,,Omnivore,Current,Occasional,High,Sedentary,Moderate,,Steroids,No,No,Occasional,Yes,Yes,No,No,No,No,Yes,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+37,Female,22.6,Tropical,No,Omnivore,Never,Moderate,High,Sedentary,High,IBD,,No,No,,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,Medium,Poor,
+77,Female,17.1,Tropical,,Vegan,Current,Heavy,Low,Light,Low,Diabetes,,No,No,Occasional,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,Low,Good,Zinc
+76,Female,27.6,Temperate,,Vegan,Current,Occasional,High,Sedentary,Low,,OCP,No,No,,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,High,Good,Folate
+53,Female,18.9,Tropical,,Vegan,Never,,Low,Light,Moderate,,Antacids/PPIs,No,Yes,,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,High,Good,Zinc
+36,Male,25.2,Temperate,,Omnivore,Never,,Moderate,Moderate,Low,IBD,,No,No,Occasional,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,High,Good,Vitamin D
+43,Female,36.5,Subtropical,Yes,Omnivore,Current,Occasional,Moderate,Sedentary,Moderate,,,No,No,,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,High,Average,Zinc
+20,Male,16.8,Temperate,,Omnivore,Current,Occasional,Moderate,Moderate,Moderate,CKD,OCP,Yes,Yes,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Good,Iron
+36,Female,23.3,Tropical,No,Vegetarian,Current,Occasional,Low,Moderate,High,,Metformin,Yes,No,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Medium,Poor,Folate
+37,Male,22.2,Subtropical,,Omnivore,Current,Occasional,High,Sedentary,Moderate,,,No,No,Frequent,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,Yes,No,No,Medium,Good,Folate
+49,Female,21.3,Tropical,,Omnivore,Never,Occasional,Low,Moderate,Low,Diabetes,Antacids/PPIs,No,Yes,Frequent,Yes,Yes,No,No,Yes,No,Yes,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Low,Average,Vitamin D
+24,Male,27.4,Temperate,,Omnivore,Never,Occasional,Low,Light,High,CKD,Metformin,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Medium,Average,Zinc
+69,Male,29.0,Temperate,,Vegan,Never,Moderate,High,Sedentary,High,,Metformin,No,Yes,Occasional,Yes,Yes,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+58,Female,27.5,Temperate,,Omnivore,Current,Occasional,Moderate,Light,Low,Hypertension,Antacids/PPIs,Yes,Yes,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Good,Vitamin D
+50,Male,20.7,Tropical,,Vegetarian,Never,Occasional,Low,Moderate,Moderate,Hypertension,Antacids/PPIs,Yes,Yes,,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,No,Low,Poor,Zinc
+57,Female,35.0,Temperate,,Omnivore,Current,,High,Sedentary,High,,Metformin,No,No,Occasional,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+56,Female,16.0,Tropical,,Vegan,Never,,High,Moderate,High,,,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,High,Good,Iron
+35,Female,19.4,Temperate,No,Vegetarian,Never,,Low,Light,High,Diabetes,,No,No,,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Medium,Good,Iron
+57,Female,24.8,Temperate,,Vegan,Current,Occasional,Low,Light,Low,,Antacids/PPIs,No,No,,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin D
+18,Female,24.4,Temperate,No,Omnivore,Current,Heavy,Moderate,Moderate,High,,Steroids,Yes,Yes,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Medium,Average,Folate
+28,Male,26.2,Subtropical,,Pescatarian,Never,,Low,Moderate,Moderate,,,No,No,Occasional,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,
+45,Male,31.1,Tropical,,Pescatarian,Never,Heavy,Moderate,Light,Moderate,Celiac,,No,No,Frequent,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Low,Poor,Vitamin D
+74,Female,23.5,Tropical,,Vegetarian,Never,,High,Active,Moderate,Diabetes,,No,No,Occasional,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Medium,Average,Calcium
+42,Female,24.5,Polar/Cold,No,Omnivore,Never,,Low,Active,Moderate,Hypothyroid,,No,Yes,,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Medium,Average,Vitamin B12
+67,Female,21.3,Tropical,,Omnivore,Never,Occasional,Low,Light,Moderate,,,No,No,,Yes,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Low,Good,
+40,Male,26.6,Subtropical,,Vegetarian,Never,,Moderate,Active,Moderate,Celiac,Steroids,Yes,Yes,Frequent,No,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,High,Average,Vitamin B12
+48,Male,22.6,Polar/Cold,,Pescatarian,Never,Occasional,Low,Light,Moderate,,Steroids,Yes,No,,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,Low,Average,
+47,Female,22.6,Subtropical,,Vegan,Former,Occasional,Low,Sedentary,Low,Diabetes,,No,No,Occasional,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,High,Poor,Iron
+59,Female,26.4,Tropical,,Vegan,Former,Occasional,Low,Active,High,,,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Medium,Poor,
+52,Other,28.7,Subtropical,,Omnivore,Never,Moderate,Low,Active,Moderate,,,No,No,,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,Low,Average,Iron
+24,Female,15.0,Tropical,No,Omnivore,Former,,High,Light,Low,Hypertension,OCP,No,No,,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Yes,High,Average,
+77,Male,25.6,Temperate,,Vegetarian,Never,,Low,Sedentary,Moderate,,OCP,No,No,Occasional,No,Yes,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+33,Male,22.8,Tropical,,Pescatarian,Current,Moderate,Moderate,Moderate,Low,CKD,,No,No,Occasional,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Iron
+43,Female,28.3,Polar/Cold,Yes,Vegetarian,Current,,Low,Sedentary,High,Hypothyroid,,No,No,,No,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Average,Vitamin B12
+65,Female,22.9,Temperate,,Omnivore,Current,Moderate,Low,Moderate,Moderate,,,Yes,No,,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,High,Poor,Magnesium
+74,Male,29.9,Polar/Cold,,Vegan,Never,Occasional,Moderate,Moderate,Moderate,,,No,No,,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Medium,Good,Vitamin D
+69,Female,21.0,Temperate,,Pescatarian,Never,Moderate,Moderate,Sedentary,Moderate,Hypertension,,Yes,No,Frequent,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Average,Calcium
+77,Female,15.0,Polar/Cold,,Omnivore,Former,,Low,Light,Moderate,,,No,No,,No,Yes,No,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin B12
+66,Male,28.7,Tropical,,Vegan,Never,Heavy,Low,Moderate,Moderate,,,No,No,Occasional,No,Yes,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Low,Good,Vitamin B12
+19,Female,20.2,Temperate,No,Omnivore,Never,,Low,Sedentary,Moderate,,,Yes,No,,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Calcium
+18,Male,16.9,Temperate,,Pescatarian,Never,,Low,Active,Low,,Antacids/PPIs,No,No,Occasional,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+65,Male,24.1,Subtropical,,Omnivore,Never,,High,Light,High,,,No,Yes,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Medium,Good,Magnesium
+79,Male,22.9,Tropical,,Omnivore,Never,Occasional,Moderate,Light,Moderate,Hypertension,,No,No,,Yes,Yes,Yes,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Iron
+29,Female,27.7,Tropical,No,Pescatarian,Never,Heavy,Moderate,Sedentary,High,,Diuretics,No,No,,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Low,Average,Folate
+22,Female,28.0,Temperate,No,Omnivore,Former,,High,Active,Moderate,Hypertension,,Yes,No,Occasional,No,No,No,Yes,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Low,Average,Vitamin B12
+54,Female,24.4,Temperate,,Vegetarian,Current,Occasional,Moderate,Moderate,Moderate,Diabetes,,No,No,Occasional,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Poor,Magnesium
+49,Male,20.0,Tropical,,Omnivore,Never,,High,Moderate,Low,Hypertension,,No,No,Occasional,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Medium,Good,Magnesium
+76,Male,25.3,Temperate,,Omnivore,Former,Occasional,Moderate,Sedentary,Moderate,,,Yes,No,,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,Medium,Good,Magnesium
+72,Female,24.7,Temperate,,Omnivore,Never,Occasional,Low,Moderate,Low,Hypertension,,No,No,Frequent,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+26,Female,26.6,Tropical,Yes,Vegetarian,Former,,Moderate,Light,Moderate,Hypertension,Diuretics,Yes,Yes,Frequent,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Good,Iron
+58,Male,20.1,Tropical,,Omnivore,Former,Occasional,Moderate,Light,High,,OCP,Yes,No,Occasional,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,High,Poor,Calcium
+52,Female,22.2,Polar/Cold,,Pescatarian,Never,,High,Light,High,Diabetes,Steroids,No,Yes,,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Medium,Good,Vitamin D
+36,Male,26.3,Tropical,,Omnivore,Never,Occasional,Moderate,Light,Low,Celiac,Metformin,Yes,No,,Yes,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+65,Male,29.6,Temperate,,Omnivore,Never,Occasional,Low,Sedentary,Moderate,,,No,No,Frequent,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,Yes,No,No,Low,Good,Zinc
+33,Male,28.3,Temperate,,Pescatarian,Never,Moderate,Low,Moderate,Moderate,,Diuretics,No,No,,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,High,Average,Magnesium
+20,Male,24.4,Polar/Cold,,Vegan,Never,,Low,Moderate,High,Celiac,Steroids,No,Yes,,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Low,Good,Vitamin D
+37,Male,21.8,Temperate,,Vegetarian,Current,Moderate,Low,Light,Moderate,Celiac,,No,Yes,Occasional,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+41,Female,25.8,Tropical,No,Vegan,Former,Moderate,High,Moderate,Moderate,,Steroids,No,No,Frequent,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,High,Average,Vitamin B12
+71,Female,19.1,Polar/Cold,,Omnivore,Never,,Moderate,Moderate,Low,Diabetes,,Yes,Yes,Occasional,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Medium,Good,Vitamin B12
+73,Female,20.3,Temperate,,Omnivore,Never,,Low,Light,High,Hypertension,,No,Yes,,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Medium,Good,Vitamin D
+50,Male,30.8,Subtropical,,Vegan,Current,Heavy,High,Moderate,Moderate,,Metformin,No,Yes,,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,High,Average,Iron
+41,Male,25.8,Temperate,,Vegetarian,Never,,Moderate,Sedentary,Low,Hypertension,Antacids/PPIs,Yes,No,,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Low,Average,Vitamin B12
+69,Male,22.4,Polar/Cold,,Omnivore,Former,,Moderate,Moderate,Moderate,IBD,,No,No,,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Average,
+28,Female,27.7,Subtropical,No,Vegan,Never,Occasional,High,Sedentary,Low,Hypothyroid,Metformin,Yes,No,Frequent,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Low,Poor,Magnesium
+66,Female,29.8,Subtropical,,Omnivore,Never,,High,Moderate,Moderate,Hypothyroid,,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,High,Poor,Folate
+25,Male,22.0,Tropical,,Omnivore,Never,Heavy,Low,Sedentary,Moderate,CKD,,No,No,,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,High,Average,Calcium
+53,Male,22.1,Temperate,,Omnivore,Former,Occasional,Moderate,Sedentary,High,,,No,No,,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+55,Female,21.5,Temperate,,Omnivore,Former,Occasional,Low,Sedentary,Low,Hypertension,Antacids/PPIs,No,No,Occasional,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+57,Male,28.3,Temperate,,Vegan,Never,Occasional,High,Sedentary,Moderate,Diabetes,,No,Yes,,Yes,Yes,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,High,Good,Iron
+37,Male,28.4,Subtropical,,Vegetarian,Never,Occasional,High,Sedentary,Moderate,,,No,Yes,,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Low,Poor,Vitamin D
+79,Female,30.2,Temperate,,Vegan,Never,Occasional,Low,Light,Moderate,,,No,Yes,,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+52,Male,28.5,Tropical,,Vegetarian,Never,,High,Light,Moderate,IBD,Metformin,Yes,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,High,Average,Calcium
+65,Female,16.7,Temperate,,Omnivore,Former,Moderate,Low,Sedentary,Low,,Diuretics,No,No,,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Medium,Poor,Calcium
+79,Female,25.3,Temperate,,Omnivore,Never,Occasional,High,Moderate,Moderate,Celiac,,No,No,,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+42,Other,19.2,Temperate,,Omnivore,Never,Moderate,Moderate,Light,Low,Diabetes,,No,Yes,Frequent,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,High,Average,Vitamin B12
+52,Male,21.7,Temperate,,Omnivore,Former,Moderate,Low,Sedentary,Low,,,No,Yes,,No,No,No,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Vitamin D
+42,Female,24.8,Tropical,No,Omnivore,Current,,High,Light,High,,,No,No,,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+46,Female,27.8,Temperate,,Vegan,Never,Occasional,High,Sedentary,Low,Diabetes,,No,No,Occasional,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Folate
+35,Male,20.0,Polar/Cold,,Vegetarian,Never,,Low,Active,Low,,Diuretics,No,No,,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Good,Zinc
+63,Female,15.0,Subtropical,,Omnivore,Former,,Moderate,Light,Moderate,,OCP,Yes,No,,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,High,Poor,Iron
+35,Female,24.8,Tropical,No,Pescatarian,Never,,High,Sedentary,High,,,Yes,No,Frequent,Yes,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Low,Good,Iron
+19,Female,35.9,Tropical,No,Vegetarian,Never,,Moderate,Moderate,Moderate,,Diuretics,No,Yes,,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin B12
+71,Male,23.1,Temperate,,Omnivore,Never,,High,Active,Moderate,,,No,Yes,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,Medium,Average,Calcium
+52,Female,24.2,Tropical,,Vegetarian,Never,Moderate,Low,Moderate,High,,Steroids,No,No,,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,High,Poor,Vitamin D
+33,Female,32.0,Subtropical,No,Omnivore,Never,Occasional,Moderate,Moderate,Low,Diabetes,OCP,No,No,,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Good,Zinc
+78,Female,26.7,Polar/Cold,,Omnivore,Never,Occasional,High,Sedentary,Moderate,Diabetes,,No,No,,Yes,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Medium,Good,Magnesium
+58,Male,25.0,Subtropical,,Omnivore,Never,,Moderate,Sedentary,Moderate,,Diuretics,No,No,Occasional,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,High,Poor,Magnesium
+53,Female,26.0,Temperate,,Vegetarian,Never,Occasional,Moderate,Light,Moderate,,,No,Yes,,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,Yes,No,No,No,No,No,No,Medium,Good,Vitamin D
+50,Female,25.1,Temperate,,Omnivore,Never,,Low,Moderate,Moderate,,,No,No,,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Low,Poor,Iron
+21,Male,18.9,Temperate,,Omnivore,Never,Occasional,High,Sedentary,Moderate,IBD,,No,No,,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,High,Good,Iron
+50,Female,18.0,Temperate,,Vegetarian,Never,Moderate,High,Light,Moderate,Hypertension,Steroids,No,No,Frequent,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Medium,Good,Vitamin D
+31,Female,32.5,Tropical,No,Omnivore,Never,Occasional,Moderate,Sedentary,Moderate,Hypothyroid,Steroids,No,No,,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+38,Female,24.8,Tropical,No,Pescatarian,Never,Heavy,Low,Active,Moderate,Hypothyroid,Steroids,No,No,Frequent,Yes,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,Low,Poor,Zinc
+65,Female,24.5,Tropical,,Omnivore,Never,Occasional,Moderate,Light,Low,,,No,No,Occasional,Yes,Yes,Yes,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Iron
+37,Female,23.6,Polar/Cold,No,Vegetarian,Current,Occasional,Low,Light,Moderate,Hypertension,Diuretics,No,No,,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,High,Good,Vitamin B12
+73,Female,27.5,Temperate,,Vegetarian,Never,,Low,Sedentary,Moderate,,,No,No,,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Medium,Poor,Calcium
+25,Female,35.4,Temperate,Yes,Pescatarian,Never,,Low,Sedentary,Moderate,IBD,Diuretics,No,No,Occasional,Yes,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,Medium,Average,Iron
+24,Female,26.4,Temperate,No,Vegetarian,Never,Occasional,Moderate,Sedentary,Moderate,,,No,Yes,Frequent,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Medium,Good,Magnesium
+20,Female,21.4,Tropical,Yes,Omnivore,Never,,Low,Light,Low,IBD,Diuretics,No,No,,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Medium,Average,Vitamin B12
+34,Male,23.4,Polar/Cold,,Vegetarian,Never,Occasional,High,Moderate,Moderate,Hypothyroid,,Yes,No,,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Medium,Good,Vitamin D
+50,Male,28.8,Temperate,,Vegetarian,Current,,Low,Light,High,Hypertension,,Yes,Yes,Frequent,Yes,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,High,Poor,Calcium
+65,Female,21.4,Polar/Cold,,Pescatarian,Former,,Low,Moderate,High,,Diuretics,No,No,Frequent,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Poor,Iron
+29,Female,27.8,Temperate,No,Omnivore,Never,Moderate,Moderate,Sedentary,High,,Antacids/PPIs,No,No,,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,High,Poor,Magnesium
+76,Male,15.0,Tropical,,Omnivore,Current,Heavy,High,Moderate,Low,Hypertension,OCP,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Low,Poor,Zinc
+68,Male,23.0,Tropical,,Vegan,Former,Occasional,High,Sedentary,Moderate,,,No,No,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Good,Iron
+39,Female,26.8,Temperate,No,Omnivore,Never,Occasional,Low,Active,Low,,Metformin,No,No,,Yes,No,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,High,Good,Vitamin B12
+72,Male,29.7,Temperate,,Vegan,Never,Moderate,Low,Moderate,Moderate,Diabetes,,No,Yes,Frequent,Yes,Yes,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Low,Poor,Iron
+39,Male,20.3,Polar/Cold,,Vegetarian,Never,Occasional,Moderate,Sedentary,High,Diabetes,,No,Yes,,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Average,
+63,Female,17.2,Subtropical,,Vegan,Never,Moderate,High,Light,Moderate,CKD,Metformin,No,Yes,,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Vitamin B12
+47,Female,22.8,Polar/Cold,,Vegan,Current,Occasional,Moderate,Light,Moderate,Hypertension,,No,No,,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Low,Good,Iron
+55,Female,18.9,Temperate,,Omnivore,Current,,High,Moderate,Moderate,,OCP,Yes,No,,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Low,Good,Vitamin D
+55,Female,23.3,Temperate,,Omnivore,Never,,High,Active,High,,Antacids/PPIs,No,No,Frequent,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,High,Average,Zinc
+62,Female,24.0,Temperate,,Vegetarian,Current,Moderate,High,Sedentary,Low,,,No,No,,Yes,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+68,Male,18.1,Subtropical,,Vegan,Never,,Low,Moderate,Moderate,CKD,Metformin,No,No,,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Good,Zinc
+71,Female,27.6,Temperate,,Omnivore,Never,,High,Sedentary,High,,,No,No,Occasional,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,Medium,Poor,Calcium
+25,Female,23.3,Temperate,No,Vegan,Former,Occasional,Low,Light,Moderate,,Steroids,No,No,Occasional,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,
+44,Female,28.9,Polar/Cold,Yes,Vegetarian,Former,,Low,Active,Low,,Steroids,No,No,,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,High,Good,Calcium
+44,Female,15.7,Temperate,No,Vegetarian,Current,Occasional,Low,Light,Moderate,IBD,,No,No,,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,
+51,Male,19.4,Polar/Cold,,Vegetarian,Former,Moderate,Low,Light,High,,,No,No,Occasional,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,High,Average,Folate
+38,Male,26.3,Subtropical,,Vegan,Never,Moderate,Low,Active,Low,,Metformin,No,No,Occasional,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Calcium
+47,Female,20.4,Tropical,,Omnivore,Current,Occasional,High,Moderate,Moderate,Hypothyroid,,No,No,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,High,Poor,Magnesium
+50,Male,23.3,Polar/Cold,,Vegan,Never,,Moderate,Moderate,High,IBD,,No,No,Frequent,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,High,Poor,Vitamin B12
+45,Female,24.0,Temperate,No,Vegetarian,Current,,High,Moderate,High,Diabetes,,No,No,Occasional,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Medium,Average,Zinc
+64,Female,24.7,Temperate,,Omnivore,Current,Moderate,Moderate,Sedentary,Moderate,Diabetes,,No,Yes,Occasional,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Medium,Average,Vitamin B12
+50,Female,21.0,Tropical,,Omnivore,Never,Moderate,Low,Moderate,Low,,Diuretics,No,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,Medium,Poor,Folate
+22,Female,24.7,Polar/Cold,Yes,Omnivore,Former,Occasional,High,Sedentary,High,,,No,No,,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,Low,Good,Magnesium
+77,Female,20.5,Polar/Cold,,Omnivore,Former,Moderate,Moderate,Active,High,Hypothyroid,,Yes,No,,Yes,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+78,Female,27.0,Subtropical,,Pescatarian,Never,,High,Sedentary,Low,,Diuretics,No,Yes,Occasional,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+65,Male,23.5,Temperate,,Vegetarian,Former,Moderate,Moderate,Light,Low,,,No,Yes,Frequent,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Medium,Average,Vitamin D
+36,Female,24.7,Subtropical,No,Pescatarian,Never,Occasional,Low,Moderate,Moderate,Hypertension,Antacids/PPIs,No,Yes,Frequent,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Low,Average,Calcium
+21,Male,35.6,Tropical,,Vegetarian,Never,Heavy,Moderate,Moderate,Moderate,,,No,No,Occasional,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Medium,Poor,Magnesium
+52,Female,19.0,Tropical,,Omnivore,Never,,Low,Moderate,Low,CKD,,No,No,Occasional,No,Yes,No,No,No,Yes,Yes,No,Yes,Yes,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,Yes,No,High,Good,Vitamin B12
+66,Male,30.2,Subtropical,,Vegan,Never,Moderate,Low,Sedentary,Moderate,,,No,Yes,,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Poor,Calcium
+34,Female,15.0,Temperate,No,Omnivore,Former,Moderate,Moderate,Light,Low,Hypertension,,No,No,,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Low,Good,Vitamin D
+61,Female,15.0,Subtropical,,Omnivore,Never,,Low,Light,High,,Antacids/PPIs,No,No,,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Good,Iron
+45,Female,18.4,Temperate,No,Vegan,Never,Heavy,Moderate,Sedentary,Low,,OCP,No,No,Occasional,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Medium,Average,Vitamin D
+47,Female,18.7,Temperate,,Pescatarian,Never,Occasional,High,Moderate,Moderate,,OCP,No,No,,No,No,No,No,Yes,Yes,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,High,Good,Vitamin D
+46,Female,24.9,Temperate,,Omnivore,Never,,High,Moderate,Low,,Metformin,No,No,Occasional,No,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,Yes,Low,Poor,Vitamin D
+63,Male,25.3,Subtropical,,Omnivore,Former,Moderate,Low,Active,Moderate,Hypertension,,No,No,,Yes,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Low,Good,Vitamin B12
+70,Male,22.9,Polar/Cold,,Omnivore,Never,Occasional,High,Sedentary,High,Hypertension,Metformin,No,No,,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,Yes,No,High,Good,Iron
+23,Male,23.3,Polar/Cold,,Pescatarian,Never,Heavy,High,Active,Low,,Metformin,No,No,,No,No,No,No,Yes,Yes,No,Yes,Yes,No,Yes,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,High,Average,Vitamin D
+52,Female,26.4,Temperate,,Vegan,Current,Moderate,Low,Sedentary,High,IBD,Diuretics,No,No,Frequent,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,Yes,No,Yes,No,Medium,Poor,Magnesium
+77,Female,27.7,Tropical,,Pescatarian,Never,,Moderate,Light,Moderate,IBD,,No,No,,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Poor,Magnesium
+58,Female,18.0,Temperate,,Omnivore,Never,Moderate,High,Sedentary,Low,,,No,No,Occasional,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,High,Good,Iron
+54,Male,22.4,Temperate,,Pescatarian,Never,Occasional,High,Light,Moderate,,OCP,No,No,Occasional,Yes,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Low,Good,Vitamin B12
+41,Male,23.7,Tropical,,Vegetarian,Current,Occasional,Low,Light,Low,Diabetes,Diuretics,No,Yes,Occasional,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,High,Good,Vitamin B12
+46,Female,26.2,Temperate,,Vegetarian,Former,Moderate,Moderate,Moderate,Moderate,,Diuretics,No,No,,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Low,Poor,Vitamin B12
+66,Female,20.5,Subtropical,,Pescatarian,Never,Occasional,High,Moderate,Moderate,,Steroids,No,Yes,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Vitamin D
+63,Male,23.6,Tropical,,Vegetarian,Current,,Low,Moderate,Moderate,,,Yes,Yes,,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,High,Good,Vitamin B12
+70,Male,24.1,Temperate,,Vegan,Never,,Moderate,Moderate,Low,Hypothyroid,,No,No,,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Low,Average,Folate
+48,Male,20.8,Tropical,,Vegan,Former,,Low,Moderate,Moderate,CKD,Metformin,No,No,,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Low,Average,Calcium
+52,Female,20.7,Polar/Cold,,Omnivore,Current,,High,Active,Moderate,Hypothyroid,,No,Yes,Frequent,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Low,Poor,Magnesium
+77,Male,24.4,Polar/Cold,,Vegetarian,Never,,Low,Moderate,High,Hypothyroid,,Yes,No,,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,Medium,Poor,Folate
+50,Female,23.4,Subtropical,,Vegan,Never,Occasional,High,Light,High,,Steroids,No,No,Frequent,Yes,Yes,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Low,Poor,Magnesium
+69,Male,26.3,Temperate,,Vegetarian,Never,,Low,Light,Low,IBD,,No,Yes,Occasional,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+78,Female,19.3,Tropical,,Omnivore,Never,Occasional,Moderate,Moderate,Moderate,,,No,No,Frequent,Yes,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Medium,Poor,Iron
+38,Male,22.4,Temperate,,Omnivore,Never,,Moderate,Sedentary,High,IBD,,No,No,Frequent,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Low,Good,Vitamin D
+49,Male,23.0,Temperate,,Vegetarian,Former,Moderate,High,Moderate,Low,,Metformin,No,No,Occasional,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Medium,Average,Magnesium
+40,Female,27.7,Tropical,Yes,Omnivore,Never,,Moderate,Sedentary,Low,Diabetes,,No,Yes,Occasional,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,High,Good,Folate
+50,Female,19.8,Subtropical,,Vegetarian,Former,,Low,Light,High,Hypertension,,No,No,Occasional,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,High,Good,
+20,Female,25.1,Polar/Cold,No,Omnivore,Never,Heavy,Low,Moderate,High,,,No,No,Occasional,Yes,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,High,Poor,Vitamin B12
+35,Male,25.1,Temperate,,Vegetarian,Never,Heavy,Low,Light,High,,Diuretics,No,No,Occasional,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,Yes,Medium,Good,Magnesium
+42,Female,31.4,Polar/Cold,No,Omnivore,Never,Moderate,Low,Moderate,Low,,,No,Yes,Occasional,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Low,Poor,Vitamin B12
+59,Male,19.5,Tropical,,Omnivore,Current,,Low,Moderate,Low,,Steroids,Yes,No,,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Medium,Good,Calcium
+48,Male,21.0,Subtropical,,Pescatarian,Never,Heavy,Low,Active,Moderate,,OCP,No,Yes,,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Medium,Poor,Vitamin D
+71,Male,19.8,Subtropical,,Omnivore,Never,Moderate,Low,Sedentary,High,Hypertension,Antacids/PPIs,No,No,,No,Yes,No,No,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,High,Poor,Vitamin D
+75,Female,16.5,Subtropical,,Pescatarian,Never,Heavy,Moderate,Moderate,High,Diabetes,,No,Yes,,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Medium,Poor,Vitamin B12
+20,Male,31.9,Polar/Cold,,Omnivore,Current,Heavy,High,Sedentary,Moderate,,,No,No,,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Medium,Good,Iron
+57,Female,18.4,Tropical,,Pescatarian,Former,Heavy,High,Moderate,Moderate,,,No,No,,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,High,Poor,Vitamin D
+63,Male,20.3,Polar/Cold,,Pescatarian,Never,,Moderate,Active,High,Diabetes,,No,No,,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Medium,Average,Magnesium
+41,Male,29.9,Temperate,,Omnivore,Never,Heavy,Low,Active,Moderate,CKD,,No,Yes,,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Medium,Poor,Vitamin B12
+67,Male,16.1,Polar/Cold,,Vegetarian,Former,,Moderate,Sedentary,Moderate,,,No,No,,Yes,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,Medium,Good,Iron
+49,Female,27.4,Temperate,,Omnivore,Never,Moderate,Low,Light,Low,Celiac,Metformin,Yes,No,Occasional,No,Yes,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Low,Poor,Vitamin B12
+64,Female,17.6,Tropical,,Vegan,Never,Moderate,Moderate,Sedentary,High,Hypertension,,No,No,Frequent,Yes,Yes,Yes,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Low,Average,Iron
