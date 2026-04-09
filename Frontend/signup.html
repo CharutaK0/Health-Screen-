@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NutriSense AI – Create Account</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#0d9488;--teal-light:#2dd4bf;--teal-dark:#065f46;
+  --gold:#f59e0b;--border:rgba(255,255,255,.1);
+  --card-bg:rgba(255,255,255,0.05);--error:#f87171;
+}
+html,body{height:100%;min-height:100vh}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#0a1f1a;
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 16px;position:relative;overflow-x:hidden;
+}
+.bg{position:fixed;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 70% 70% at 15% 5%, rgba(13,148,136,0.3) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 85% 95%, rgba(6,95,70,0.35) 0%, transparent 50%),
+    radial-gradient(ellipse 35% 40% at 70% 15%, rgba(245,158,11,0.1) 0%, transparent 45%);
+}
+.bg-noise{position:fixed;inset:0;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity:0.4;pointer-events:none;
+}
+
+.wrap{position:relative;z-index:1;width:100%;max-width:440px;
+  animation:fadeUp .7s cubic-bezier(.16,1,.3,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+.logo{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:32px}
+.logo-mark{width:44px;height:44px;border-radius:13px;
+  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+  box-shadow:0 0 24px rgba(13,148,136,0.4),0 0 0 1px rgba(45,212,191,0.25)}
+.logo-name{font-family:'Fraunces',serif;font-size:18px;font-weight:900;color:#fff;letter-spacing:-.4px}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:24px;padding:36px 32px;
+  backdrop-filter:blur(20px);
+  box-shadow:0 24px 60px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.card-title{font-family:'Fraunces',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px}
+.card-sub{font-size:13.5px;color:rgba(255,255,255,.45);margin-bottom:28px;line-height:1.5}
+.card-sub a{color:var(--teal-light);text-decoration:none;font-weight:500}
+.card-sub a:hover{text-decoration:underline}
+
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-size:12px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.3px}
+.field input{
+  background:rgba(255,255,255,0.07);
+  border:1.5px solid rgba(255,255,255,.12);
+  border-radius:12px;padding:12px 15px;
+  font-family:'DM Sans',sans-serif;font-size:14px;color:#fff;
+  outline:none;transition:border-color .2s,box-shadow .2s;
+}
+.field input::placeholder{color:rgba(255,255,255,.25)}
+.field input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.2)}
+.field input.err{border-color:var(--error);box-shadow:0 0 0 3px rgba(248,113,113,.15)}
+.err-msg{font-size:11.5px;color:var(--error);margin-top:2px}
+
+.btn-submit{
+  width:100%;display:flex;align-items:center;justify-content:center;gap:8px;
+  background:linear-gradient(135deg,var(--teal),#0f766e);
+  color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;
+  padding:14px;border-radius:14px;border:none;cursor:pointer;margin-top:8px;
+  box-shadow:0 6px 24px rgba(13,148,136,.4);
+  transition:transform .18s,box-shadow .18s;
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(13,148,136,.5)}
+
+.divider{display:flex;align-items:center;gap:12px;margin:22px 0}
+.divider span{font-size:12px;color:rgba(255,255,255,.25)}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.08)}
+
+.signin-row{text-align:center;font-size:13.5px;color:rgba(255,255,255,.4)}
+.signin-row a{color:var(--teal-light);text-decoration:none;font-weight:600}
+.signin-row a:hover{text-decoration:underline}
+
+.terms{font-size:11px;color:rgba(255,255,255,.25);text-align:center;margin-top:20px;line-height:1.6}
+
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(66px);
+  background:#0c1a16;border:1px solid rgba(45,212,191,.3);color:#fff;padding:10px 22px;border-radius:99px;
+  font-size:13px;font-weight:600;box-shadow:0 6px 22px rgba(0,0,0,.4);
+  transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .35s;opacity:0;pointer-events:none;z-index:999}
+.toast.on{transform:translateX(-50%) translateY(0);opacity:1}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="bg-noise"></div>
+<div class="wrap">
+  <div class="logo">
+    <div class="logo-mark">🥗</div>
+    <div class="logo-name">NutriSense AI</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Create your account</div>
+    <div class="card-sub">Start your personalized nutrition journey. <a href="login.html">Already have one?</a></div>
+
+    <div class="field">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="e.g. Anya Sharma" autocomplete="name"/>
+    </div>
+    <div class="field">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email"/>
+    </div>
+    <div class="field">
+      <label for="pass">Password</label>
+      <input type="password" id="pass" placeholder="Min 6 characters"/>
+    </div>
+    <div class="field">
+      <label for="pass2">Confirm Password</label>
+      <input type="password" id="pass2" placeholder="Repeat password"/>
+    </div>
+
+    <button class="btn-submit" onclick="doSignup()">
+      Create Account
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+
+    <div class="divider"><span>or</span></div>
+    <div class="signin-row"><a href="login.html">Sign in to existing account</a></div>
+
+    <div class="terms">By creating an account, you agree to our Terms of Service and Privacy Policy. All data is stored locally on your device.</div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+// Redirect if already logged in
+if (localStorage.getItem('nc_user')) window.location.href = 'home.html';
+
+function doSignup() {
+  const name  = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const pass  = document.getElementById('pass').value;
+  const pass2 = document.getElementById('pass2').value;
+  let ok = true;
+
+  [['name',name],['email',email],['pass',pass],['pass2',pass2]].forEach(([id,val]) => {
+    const el = document.getElementById(id);
+    if (!val) { el.classList.add('err'); ok = false; }
+    else el.classList.remove('err');
+  });
+  if (!ok) { showToast('⚠️ Please fill all fields'); return; }
+  if (pass.length < 6) { document.getElementById('pass').classList.add('err'); showToast('⚠️ Password must be at least 6 characters'); return; }
+  if (pass !== pass2)  { document.getElementById('pass2').classList.add('err'); showToast('⚠️ Passwords do not match'); return; }
+
+  // Check if user exists
+  const users = JSON.parse(localStorage.getItem('nc_users') || '[]');
+  if (users.find(u => u.email === email)) { showToast('⚠️ Email already registered'); return; }
+
+  const user = { name, email, pass, createdAt: Date.now() };
+  users.push(user);
+  localStorage.setItem('nc_users', JSON.stringify(users));
+  localStorage.setItem('nc_user', JSON.stringify(user));
+  localStorage.removeItem('nc_basic_done'); // ensure basic info is filled
+
+  showToast('✅ Account created! Setting up your profile…');
+  setTimeout(() => window.location.href = 'user_basic.html', 900);
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  setTimeout(() => t.classList.remove('on'), 2600);
+}
+</script>
+</body>
+</html>

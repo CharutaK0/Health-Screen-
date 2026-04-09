@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NutriSense AI – Basic Info</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#0d9488;--teal-light:#2dd4bf;--teal-dark:#065f46;
+  --border:rgba(45,212,191,0.2);--card-border:rgba(255,255,255,0.1);
+  --error:#f87171;--rc:20px;--ri:12px;
+}
+html,body{min-height:100vh}
+body{
+  font-family:'DM Sans',sans-serif;background:#0a1f1a;
+  display:flex;flex-direction:column;
+  position:relative;overflow-x:hidden;
+}
+.bg{position:fixed;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 70% 70% at 10% 5%, rgba(13,148,136,0.28) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 90% 95%, rgba(6,95,70,0.33) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 35% at 65% 20%, rgba(45,212,191,0.08) 0%, transparent 45%)}
+.bg-noise{position:fixed;inset:0;z-index:0;opacity:0.35;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E")}
+
+nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 32px;border-bottom:1px solid rgba(255,255,255,0.06);
+  background:rgba(10,31,26,0.6);backdrop-filter:blur(16px)}
+.nav-logo{display:flex;align-items:center;gap:8px}
+.nav-mark{width:32px;height:32px;border-radius:9px;
+  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+  display:flex;align-items:center;justify-content:center;font-size:16px}
+.nav-name{font-family:'Fraunces',serif;font-size:16px;font-weight:900;color:#fff;letter-spacing:-.3px}
+.btn-home{display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;
+  padding:7px 14px;border-radius:99px;cursor:pointer;text-decoration:none;transition:all .2s}
+.btn-home:hover{background:rgba(255,255,255,.09);color:rgba(255,255,255,.8)}
+
+.page{position:relative;z-index:1;flex:1;padding:36px 20px 60px;
+  display:flex;flex-direction:column;align-items:center}
+.wrap{width:100%;max-width:680px;animation:fadeUp .6s cubic-bezier(.16,1,.3,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* stepper */
+.stepper{display:flex;align-items:center;margin-bottom:24px}
+.st-item{display:flex;align-items:center;gap:7px;flex:1}
+.st-circle{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.st-circle.active{background:var(--teal);color:#fff;box-shadow:0 0 14px rgba(13,148,136,.5)}
+.st-circle.off{background:rgba(255,255,255,.1);color:rgba(255,255,255,.3)}
+.st-circle.done{background:rgba(13,148,136,.4);color:#fff}
+.st-lbl{font-size:10px;font-weight:700;letter-spacing:.7px;text-transform:uppercase}
+.st-lbl.active{color:#fff}.st-lbl.off{color:rgba(255,255,255,.3)}.st-lbl.done{color:rgba(45,212,191,.75)}
+.st-line{flex:1;height:2px;border-radius:99px;margin:0 5px;background:rgba(255,255,255,.1)}
+.st-line.done{background:rgba(13,148,136,.45)}
+
+/* card */
+.card{background:rgba(255,255,255,0.05);border:1px solid var(--card-border);
+  border-radius:22px;overflow:hidden;backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.07)}
+
+.card-head{background:linear-gradient(135deg,rgba(6,95,70,0.9) 0%,rgba(13,148,136,0.8) 100%);
+  padding:28px 32px 24px;position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.07)}
+.card-head::after{content:'';position:absolute;bottom:-40px;right:-40px;width:160px;height:160px;border-radius:50%;
+  background:radial-gradient(circle,rgba(45,212,191,.14) 0%,transparent 70%)}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;
+  background:rgba(45,212,191,.12);border:1px solid rgba(45,212,191,.25);
+  color:#5eead4;font-size:10px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;
+  padding:4px 12px;border-radius:99px;margin-bottom:10px}
+.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:#2dd4bf}
+.card-head h2{font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:5px}
+.card-head p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6}
+.once-badge{display:inline-flex;align-items:center;gap:5px;margin-top:8px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+  color:rgba(255,255,255,.65);font-size:11px;font-weight:600;padding:4px 12px;border-radius:99px}
+
+.form-body{padding:26px 32px 20px}
+.sec{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:rgba(45,212,191,.7);margin-bottom:12px;margin-top:22px;
+  display:flex;align-items:center;gap:8px}
+.sec:first-child{margin-top:0}
+.sec::after{content:'';flex:1;height:1px;background:linear-gradient(to right,rgba(45,212,191,.2),transparent)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:540px){
+  .g2,.g3{grid-template-columns:1fr}
+  .card-head,.form-body,.card-foot{padding-left:18px;padding-right:18px}
+  .card-foot{flex-direction:column;gap:10px;align-items:stretch}
+  .btn-next{justify-content:center}
+}
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.field:last-child{margin-bottom:0}
+.field label{font-size:11.5px;font-weight:600;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.req{color:#f87171;font-size:12px;line-height:1}
+
+select{
+  width:100%;padding:10px 32px 10px 13px;
+  border:1.5px solid rgba(255,255,255,.1);border-radius:var(--ri);
+  font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;
+  color:#fff;background-color:rgba(255,255,255,0.07);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%232dd4bf' stroke-width='1.7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;
+  -webkit-appearance:none;appearance:none;cursor:pointer;
+  transition:border-color .2s,box-shadow .2s;
+}
+select option{background:#0f2e26;color:#fff}
+select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.2)}
+select:hover{border-color:rgba(45,212,191,.35)}
+select.err{border-color:var(--error);box-shadow:0 0 0 3px rgba(248,113,113,.15)}
+
+.card-foot{padding:16px 32px 26px;display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid rgba(255,255,255,.06)}
+.foot-txt{font-size:12px;color:rgba(255,255,255,.4);font-weight:500;line-height:1.6}
+.foot-txt strong{color:rgba(255,255,255,.75)}
+
+.btn-next{display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--teal),#0f766e);
+  color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
+  padding:12px 24px;border-radius:14px;border:none;cursor:pointer;
+  box-shadow:0 5px 20px rgba(13,148,136,.4);transition:transform .18s,box-shadow .18s}
+.btn-next:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(13,148,136,.5)}
+.btn-next:active{transform:none}
+.btn-next svg{transition:transform .18s}
+.btn-next:hover svg{transform:translateX(3px)}
+
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(66px);
+  background:#0c1a16;border:1px solid rgba(45,212,191,.3);color:#fff;padding:10px 22px;border-radius:99px;
+  font-size:13px;font-weight:600;box-shadow:0 6px 22px rgba(0,0,0,.4);
+  transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .35s;opacity:0;pointer-events:none;z-index:999}
+.toast.on{transform:translateX(-50%) translateY(0);opacity:1}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="bg-noise"></div>
+
+<!-- ============================================================
+     fieldLabels integration
+     Provides: FIELD_LABELS, FIELD_OPTIONS, getLabel()
+     Used below to populate select options & labels via JS
+============================================================ -->
+<script>
+const FIELD_LABELS = {
+  age:"Age",bmi:"BMI",gender:"Gender",geographic_region:"Geographic Region",
+  pregnancy_status:"Pregnancy Status",diet_type:"Diet Type",smoking_status:"Smoking Status",
+  alcohol_consumption:"Alcohol Consumption",sun_exposure:"Sun Exposure",
+  physical_activity_level:"Physical Activity Level",stress_level:"Stress Level",
+  energy_level:"Energy Level",sleep_quality:"Sleep Quality",chronic_condition:"Chronic Condition",
+  medication_use:"Medication Use",recent_blood_loss:"Recent Blood Loss",
+  family_history_of_deficiency:"Family History of Deficiency",digestive_issues:"Digestive Issues",
+  fatigue:"Fatigue",pallor:"Pallor",shortness_of_breath:"Shortness of Breath",
+  cold_intolerance:"Cold Intolerance",bone_pain:"Bone Pain",muscle_weakness:"Muscle Weakness",
+  frequent_illness:"Frequent Illness",hair_loss:"Hair Loss",tingling_numbness:"Tingling / Numbness",
+  memory_cognitive_issues:"Memory / Cognitive Issues",balance_problems:"Balance Problems",
+  mood_swings:"Mood Swings",muscle_cramps:"Muscle Cramps",dental_issues:"Dental Issues",
+  brittle_nails:"Brittle Nails",anxiety_and_poor_sleep:"Anxiety and Poor Sleep",
+  frequent_headaches:"Frequent Headaches",loss_of_appetite:"Loss of Appetite",
+  slow_wound_healing:"Slow Wound Healing",loss_of_taste_smell:"Loss of Taste / Smell",
+  mouth_sores:"Mouth Sores",tongue_swelling:"Tongue Swelling",restless_legs:"Restless Legs",
+  night_sweats:"Night Sweats",predicted_deficiency:"Predicted Deficiency",
+  confirmed_deficiency:"Confirmed Deficiency",confidence_score:"Confidence Score"
+};
+
+const FIELD_OPTIONS = {
+  gender:[
+    {value:"Male",label:"Male"},{value:"Female",label:"Female"},{value:"Other",label:"Other"}
+  ],
+  diet_type:[
+    {value:"Omnivore",label:"Omnivore"},{value:"Vegetarian",label:"Vegetarian"},
+    {value:"Vegan",label:"Vegan"},{value:"Pescatarian",label:"Pescatarian"}
+  ],
+  geographic_region:[
+    {value:"Tropical",label:"Tropical"},{value:"Temperate",label:"Temperate"},
+    {value:"Polar/Cold",label:"Polar / Cold"},{value:"Arid/Desert",label:"Arid / Desert"},
+    {value:"Mediterranean",label:"Mediterranean"}
+  ],
+  smoking_status:[
+    {value:"Never",label:"Never"},{value:"Former",label:"Former"},{value:"Current",label:"Current"}
+  ],
+  alcohol_consumption:[
+    {value:"None",label:"None"},{value:"Moderate",label:"Moderate"},{value:"Heavy",label:"Heavy"}
+  ],
+  sun_exposure:[
+    {value:"Minimal",label:"Minimal"},{value:"Moderate",label:"Moderate"},{value:"High",label:"High"}
+  ],
+  physical_activity_level:[
+    {value:"Sedentary",label:"Sedentary"},{value:"Moderate",label:"Moderate"},
+    {value:"Active",label:"Active"},{value:"Very Active",label:"Very Active"}
+  ],
+  stress_level:[
+    {value:"Low",label:"Low"},{value:"Moderate",label:"Moderate"},{value:"High",label:"High"}
+  ],
+  energy_level:[
+    {value:"Low",label:"Low"},{value:"Medium",label:"Medium"},{value:"High",label:"High"}
+  ],
+  sleep_quality:[
+    {value:"Poor",label:"Poor"},{value:"Average",label:"Average"},
+    {value:"Good",label:"Good"},{value:"Excellent",label:"Excellent"}
+  ],
+  symptom:[
+    {value:"Yes",label:"Yes"},{value:"No",label:"No"},{value:"Occasional",label:"Occasional"}
+  ]
+};
+
+function getLabel(key) {
+  return FIELD_LABELS[key] || key.replace(/_/g," ");
+}
+
+// Helper: populate a <select> element from a FIELD_OPTIONS array
+// preserves the placeholder <option value="">…</option> at index 0
+function populateSelect(el, optionsKey) {
+  const opts = FIELD_OPTIONS[optionsKey];
+  if (!el || !opts) return;
+  const placeholder = el.options[0]; // keep "Select …" option
+  el.innerHTML = "";
+  el.appendChild(placeholder);
+  opts.forEach(o => {
+    const opt = document.createElement("option");
+    opt.value = o.value;
+    opt.textContent = o.label;
+    el.appendChild(opt);
+  });
+}
+
+// Helper: set label text for a field, keeping child elements (req/opt badges)
+function setLabel(forId, fieldKey, suffix) {
+  const lbl = document.querySelector('label[for="' + forId + '"]');
+  if (!lbl) return;
+  // Preserve the badge span
+  const badge = lbl.querySelector('span');
+  lbl.textContent = getLabel(fieldKey);
+  if (suffix) lbl.appendChild(document.createTextNode(" "));
+  if (badge) lbl.appendChild(badge);
+}
+</script>
+
+<nav>
+  <div class="nav-logo">
+    <div class="nav-mark">🥗</div>
+    <div class="nav-name">NutriSense AI</div>
+  </div>
+  <a href="home.html" class="btn-home">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+    Home
+  </a>
+</nav>
+
+<div class="page">
+<div class="wrap">
+  <div class="stepper">
+    <div class="st-item"><div class="st-circle active">1</div><div class="st-lbl active">Basic Info</div></div>
+    <div class="st-line"></div>
+    <div class="st-item"><div class="st-circle off">2</div><div class="st-lbl off">Lifestyle</div></div>
+    <div class="st-line"></div>
+    <div class="st-item"><div class="st-circle off">3</div><div class="st-lbl off">Symptoms</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="eyebrow"><span class="dot"></span>Step 1 of 3 · Basic Information</div>
+      <h2>Tell us about yourself</h2>
+      <p>This is collected once after signup and saved to your profile permanently.</p>
+      <div class="once-badge">🔒 One-time setup · Won't be asked again</div>
+    </div>
+
+    <div class="form-body">
+      <div class="sec">Personal Details</div>
+      <div class="g3">
+        <!-- age: plain numeric options retained as-is; only label updated via getLabel -->
+        <div class="field">
+          <label for="Age">Age <span class="req">*</span></label>
+          <select id="Age" name="age">
+            <option value="">Select age</option>
+            <option>18</option><option>19</option><option>20</option><option>21</option><option>22</option>
+            <option>23</option><option>24</option><option>25</option><option>26</option><option>27</option>
+            <option>28</option><option>29</option><option>30</option><option>31</option><option>32</option>
+            <option>33</option><option>34</option><option>35</option><option>36</option><option>37</option>
+            <option>38</option><option>39</option><option>40</option><option>41</option><option>42</option>
+            <option>43</option><option>44</option><option>45</option><option>46</option><option>47</option>
+            <option>48</option><option>49</option><option>50</option><option>51</option><option>52</option>
+            <option>53</option><option>54</option><option>55</option><option>56</option><option>57</option>
+            <option>58</option><option>59</option><option>60</option><option>61</option><option>62</option>
+            <option>63</option><option>64</option><option>65</option><option>66</option><option>67</option>
+            <option>68</option><option>69</option><option>70</option><option>71</option><option>72</option>
+            <option>73</option><option>74</option><option>75</option><option>76</option><option>77</option>
+            <option>78</option><option>79</option>
+          </select>
+        </div>
+        <!-- gender: options replaced via FIELD_OPTIONS.gender -->
+        <div class="field">
+          <label for="Gender">Gender <span class="req">*</span></label>
+          <select id="Gender" name="gender">
+            <option value="">Select gender</option>
+          </select>
+        </div>
+        <!-- bmi: plain numeric options retained as-is -->
+        <div class="field">
+          <label for="BMI">BMI <span class="req">*</span></label>
+          <select id="BMI" name="bmi">
+            <option value="">Select BMI</option>
+            <option>15.0</option><option>15.4</option><option>15.5</option><option>15.9</option>
+            <option>16.0</option><option>16.5</option><option>17.0</option><option>17.5</option>
+            <option>18.0</option><option>18.5</option><option>19.0</option><option>19.5</option>
+            <option>20.0</option><option>20.5</option><option>21.0</option><option>21.5</option>
+            <option>22.0</option><option>22.5</option><option>23.0</option><option>23.5</option>
+            <option>24.0</option><option>24.5</option><option>25.0</option><option>25.5</option>
+            <option>26.0</option><option>26.5</option><option>27.0</option><option>27.5</option>
+            <option>28.0</option><option>28.5</option><option>29.0</option><option>29.5</option>
+            <option>30.0</option><option>30.5</option><option>31.0</option><option>31.5</option>
+            <option>32.0</option><option>33.0</option><option>34.0</option><option>35.0</option>
+            <option>36.0</option><option>36.5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sec">Location &amp; Diet</div>
+      <div class="g2">
+        <!-- geographic_region: options replaced via FIELD_OPTIONS.geographic_region -->
+        <div class="field">
+          <label for="Geographic_Region">Geographic Region <span class="req">*</span></label>
+          <select id="Geographic_Region" name="geographic_region">
+            <option value="">Select region</option>
+          </select>
+        </div>
+        <!-- diet_type: options replaced via FIELD_OPTIONS.diet_type -->
+        <div class="field">
+          <label for="Diet_Type">Diet Type <span class="req">*</span></label>
+          <select id="Diet_Type" name="diet_type">
+            <option value="">Select diet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sec">Family History</div>
+      <div class="g2">
+        <div class="field">
+          <label for="Family_History_of_Deficiency">Family History of Deficiency <span class="req">*</span></label>
+          <select id="Family_History_of_Deficiency" name="family_history_of_deficiency">
+            <option value="">Select</option>
+            <option value="No">No</option><option value="Yes">Yes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-foot">
+      <div class="foot-txt">
+        <strong>Step 1 of 3</strong> · Basic Info<br>
+        <span style="font-size:11px;color:rgba(45,212,191,.5)">🔒 Saved once to your health profile</span>
+      </div>
+      <button class="btn-next" onclick="saveAndNext()">
+        Save &amp; Continue
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+if (!localStorage.getItem('nc_user')) window.location.href = 'login.html';
+
+const FIELDS   = ['Age','Gender','BMI','Geographic_Region','Diet_Type','Family_History_of_Deficiency'];
+const REQUIRED = ['Age','Gender','BMI','Geographic_Region','Diet_Type','Family_History_of_Deficiency'];
+
+window.addEventListener('DOMContentLoaded', () => {
+  // Populate dropdowns via FIELD_OPTIONS
+  populateSelect(document.getElementById('Gender'),           'gender');
+  populateSelect(document.getElementById('Geographic_Region'),'geographic_region');
+  populateSelect(document.getElementById('Diet_Type'),        'diet_type');
+
+  // Restore saved values
+  const s = JSON.parse(localStorage.getItem('nc_basic') || '{}');
+  FIELDS.forEach(id => { const el = document.getElementById(id); if(el && s[id]) el.value = s[id]; });
+});
+
+function saveAndNext() {
+  let ok = true;
+  REQUIRED.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el.value) { el.classList.add('err'); ok = false; }
+    else el.classList.remove('err');
+  });
+  if (!ok) { showToast('⚠️ Please fill all required fields'); return; }
+  const data = {};
+  FIELDS.forEach(id => data[id] = document.getElementById(id).value);
+  localStorage.setItem('nc_basic', JSON.stringify(data));
+  localStorage.setItem('nc_basic_done', 'true');
+  showToast('✅ Basic info saved!');
+  setTimeout(() => window.location.href = 'home.html', 900);
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  setTimeout(() => t.classList.remove('on'), 2600);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NutriSense AI – Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#0d9488;--teal-light:#2dd4bf;--teal-dark:#065f46;
+  --gold:#f59e0b;--gold-light:#fcd34d;
+  --purple:#a78bfa;--rose:#fb7185;
+}
+html,body{min-height:100vh}
+body{
+  font-family:'DM Sans',sans-serif;background:#0a1f1a;
+  padding:0;position:relative;overflow-x:hidden;
+}
+.bg{position:fixed;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 70% at 5% 0%, rgba(13,148,136,0.3) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 95% 100%, rgba(6,95,70,0.38) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 75% 10%, rgba(245,158,11,0.1) 0%, transparent 45%),
+    radial-gradient(ellipse 50% 40% at 20% 85%, rgba(45,212,191,0.08) 0%, transparent 45%);
+  animation:bgPulse 16s ease-in-out infinite alternate;
+}
+@keyframes bgPulse{0%{opacity:1}100%{opacity:0.8}}
+.bg-noise{position:fixed;inset:0;z-index:0;opacity:0.35;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E")}
+
+/* ── NAV ── */
+nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;
+  padding:20px 40px;border-bottom:1px solid rgba(255,255,255,0.06);
+  background:rgba(10,31,26,0.6);backdrop-filter:blur(16px)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-mark{width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  box-shadow:0 0 18px rgba(13,148,136,0.35)}
+.nav-name{font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:#fff;letter-spacing:-.3px}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-user{font-size:13px;color:rgba(255,255,255,.5);font-weight:500}
+.nav-user strong{color:rgba(255,255,255,.85)}
+.btn-logout{display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;
+  padding:7px 14px;border-radius:99px;cursor:pointer;transition:all .2s}
+.btn-logout:hover{background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.3);color:#f87171}
+
+@media(max-width:520px){nav{padding:16px 20px}.nav-user{display:none}}
+
+/* ── MAIN ── */
+main{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:48px 24px 80px}
+
+.greeting{margin-bottom:48px;animation:fadeUp .7s cubic-bezier(.16,1,.3,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.greeting-time{font-size:12px;color:rgba(255,255,255,.35);font-weight:500;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.greeting h1{font-family:'Fraunces',serif;font-size:clamp(32px,5vw,48px);font-weight:900;color:#fff;letter-spacing:-1.5px;line-height:1.1;margin-bottom:10px}
+.greeting h1 em{color:var(--teal-light);font-style:italic;font-weight:300}
+.greeting p{font-size:15px;color:rgba(255,255,255,.45);line-height:1.65;max-width:480px}
+
+/* ── CTA HERO CARD ── */
+.cta-card{
+  background:linear-gradient(135deg, rgba(13,148,136,0.2) 0%, rgba(6,95,70,0.25) 100%);
+  border:1px solid rgba(45,212,191,0.2);
+  border-radius:24px;padding:44px 40px;
+  display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+  margin-bottom:28px;position:relative;overflow:hidden;
+  animation:fadeUp .7s .1s cubic-bezier(.16,1,.3,1) both;
+  backdrop-filter:blur(12px);
+  box-shadow:0 0 0 1px rgba(45,212,191,0.08), 0 24px 60px rgba(0,0,0,0.3);
+}
+.cta-card::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 80% at 90% 50%, rgba(45,212,191,0.06) 0%, transparent 60%);pointer-events:none}
+.cta-left{flex:1;min-width:220px}
+.cta-eyebrow{display:inline-flex;align-items:center;gap:6px;
+  background:rgba(45,212,191,0.12);border:1px solid rgba(45,212,191,0.25);
+  color:#5eead4;font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+  padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.cta-eyebrow .live{width:5px;height:5px;border-radius:50%;background:#2dd4bf;
+  animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(45,212,191,.6)}50%{box-shadow:0 0 0 5px rgba(45,212,191,0)}}
+.cta-left h2{font-family:'Fraunces',serif;font-size:28px;font-weight:700;color:#fff;letter-spacing:-.8px;margin-bottom:10px;line-height:1.2}
+.cta-left p{font-size:14px;color:rgba(255,255,255,.45);line-height:1.6;max-width:360px}
+
+.btn-start{
+  display:inline-flex;align-items:center;gap:10px;white-space:nowrap;
+  background:linear-gradient(135deg,var(--teal) 0%,#0f766e 100%);
+  color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;
+  padding:16px 32px;border-radius:16px;border:none;cursor:pointer;text-decoration:none;
+  box-shadow:0 8px 30px rgba(13,148,136,0.45),0 0 0 1px rgba(45,212,191,0.2);
+  transition:transform .2s,box-shadow .2s;flex-shrink:0;
+}
+.btn-start:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(13,148,136,0.55)}
+.btn-start svg{transition:transform .2s}
+.btn-start:hover svg{transform:translateX(3px)}
+
+/* Steps */
+.steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px;
+  animation:fadeUp .7s .2s cubic-bezier(.16,1,.3,1) both}
+@media(max-width:580px){.steps-row{grid-template-columns:1fr}}
+.step-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;padding:24px 20px;backdrop-filter:blur(10px);
+  transition:border-color .2s,transform .2s;
+}
+.step-card:hover{border-color:rgba(45,212,191,0.2);transform:translateY(-2px)}
+.step-icon{font-size:26px;margin-bottom:12px}
+.step-num{font-size:10px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.step-title{font-size:15px;font-weight:600;color:#fff;margin-bottom:6px}
+.step-desc{font-size:12.5px;color:rgba(255,255,255,.4);line-height:1.55}
+
+/* Info strip */
+.info-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  animation:fadeUp .7s .3s cubic-bezier(.16,1,.3,1) both}
+@media(max-width:580px){.info-row{grid-template-columns:1fr 1fr}}
+.info-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);
+  border-radius:16px;padding:20px;backdrop-filter:blur(10px);text-align:center;
+}
+.info-num{font-family:'Fraunces',serif;font-size:30px;font-weight:700;margin-bottom:4px}
+.info-lbl{font-size:11.5px;color:rgba(255,255,255,.4);font-weight:500}
+.c-teal{color:var(--teal-light)}.c-gold{color:var(--gold-light)}.c-purple{color:var(--purple)}
+
+/* Profile banner */
+.profile-strip{
+  background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);
+  border-radius:16px;padding:14px 20px;margin-bottom:28px;
+  display:flex;align-items:center;gap:12px;
+  animation:fadeUp .7s .15s cubic-bezier(.16,1,.3,1) both;
+}
+.profile-strip-ico{font-size:20px}
+.profile-strip-text{flex:1;font-size:13px;color:rgba(255,255,255,.6);line-height:1.5}
+.profile-strip-text strong{color:#fcd34d}
+.profile-strip-link{font-size:12px;color:#fcd34d;text-decoration:none;font-weight:600;white-space:nowrap}
+.profile-strip-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="bg-noise"></div>
+
+<nav>
+  <div class="nav-logo">
+    <div class="nav-mark">🥗</div>
+    <div class="nav-name">NutriSense AI</div>
+  </div>
+  <div class="nav-right">
+    <div class="nav-user">Hello, <strong id="userName">there</strong></div>
+    <button class="btn-logout" onclick="logout()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+      Sign Out
+    </button>
+  </div>
+</nav>
+
+<main>
+  <div class="greeting">
+    <div class="greeting-time" id="timeGreet">Good morning</div>
+    <h1 id="h1Greet">Ready to check on<br><em>your nutrition?</em></h1>
+    <p>Your personalized deficiency assessment takes about 5 minutes and gives you actionable health insights.</p>
+  </div>
+
+  <div class="profile-strip" id="profileStrip" style="display:none">
+    <div class="profile-strip-ico">⚠️</div>
+    <div class="profile-strip-text">Your <strong>Basic Profile</strong> hasn't been set up yet. Complete it first before starting an assessment.</div>
+    <a href="user_basic.html" class="profile-strip-link">Set Up Now →</a>
+  </div>
+
+  <div class="cta-card">
+    <div class="cta-left">
+      <div class="cta-eyebrow"><span class="live"></span>Assessment Ready</div>
+      <h2>Start Your Health Assessment</h2>
+      <p>Answer questions about your lifestyle and symptoms to receive a personalized nutritional deficiency report powered by AI.</p>
+    </div>
+    <a href="user_lifestyle.html" class="btn-start" id="btnStart">
+      Begin Assessment
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="steps-row">
+    <div class="step-card">
+      <div class="step-icon">🏃</div>
+      <div class="step-num">Step 1</div>
+      <div class="step-title">Lifestyle</div>
+      <div class="step-desc">Share your daily habits, environment, and medical background.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-icon">🩺</div>
+      <div class="step-num">Step 2</div>
+      <div class="step-title">Symptoms</div>
+      <div class="step-desc">Report 27 key physical and mental symptoms you may be experiencing.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-icon">✨</div>
+      <div class="step-num">Step 3</div>
+      <div class="step-title">Results</div>
+      <div class="step-desc">Get your AI-powered nutritional deficiency report with recommendations.</div>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-card"><div class="info-num c-teal">27+</div><div class="info-lbl">Symptoms Analyzed</div></div>
+    <div class="info-card"><div class="info-num c-gold">10+</div><div class="info-lbl">Deficiencies Detected</div></div>
+    <div class="info-card"><div class="info-num c-purple">~5 min</div><div class="info-lbl">To Complete</div></div>
+  </div>
+</main>
+
+<script>
+// Auth guard
+const user = JSON.parse(localStorage.getItem('nc_user') || 'null');
+if (!user) window.location.href = 'login.html';
+else {
+  document.getElementById('userName').textContent = user.name.split(' ')[0];
+  document.getElementById('h1Greet').innerHTML = 'Hello, <em>' + user.name.split(' ')[0] + '</em> 👋';
+}
+
+// Time greeting
+const h = new Date().getHours();
+document.getElementById('timeGreet').textContent =
+  h < 12 ? 'Good morning ☀️' : h < 17 ? 'Good afternoon 🌤️' : 'Good evening 🌙';
+
+// Check if basic profile done
+const basicDone = localStorage.getItem('nc_basic_done');
+if (!basicDone) {
+  document.getElementById('profileStrip').style.display = 'flex';
+  const btn = document.getElementById('btnStart');
+  btn.href = 'user_basic.html';
+  btn.innerHTML = 'Complete Profile First <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+}
+
+function logout() {
+  localStorage.removeItem('nc_user');
+  window.location.href = 'index.html';
+}
+</script>
+</body>
+</html>

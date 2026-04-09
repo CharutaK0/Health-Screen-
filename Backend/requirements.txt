@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+asyncpg
+bcrypt
+python-jose[cryptography]
+python-dotenv
+pydantic[email]
+scikit-learn
+numpy
+pandas
